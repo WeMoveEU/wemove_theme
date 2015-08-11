@@ -1,6 +1,6 @@
 name = WeMove.EU Theme 1
 description = THeme for we move europe
-core = 7.x1
+core = 7.x
 base theme = bootstrap
 #stylesheets[all][] = css/style.css
 #stylesheets[all][] = css/orange.css
