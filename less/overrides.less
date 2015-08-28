@@ -6,6 +6,9 @@
 @normal:  ~"screen and (min-width: @{screen-md-min})";
 @wide:    ~"screen and (min-width: @{screen-lg-min})";
 
+// Carousel variables
+@carousel-control-size: 43px;
+
 // Drop shadows.
 .box-shadow(@shadow) {
   -webkit-box-shadow: @shadow;
@@ -13,6 +16,21 @@
           box-shadow: @shadow;
 }
 
+// Headlines
+h3, .h3, 
+h4, .h4, 
+h5, .h5, 
+h6, .h6 {line-height:@headings-line-height-large;}
+
+// Styles
+big:extend(.h3) {
+	color:@brand-primary;
+}
+
+//Images
+img {max-width:100%;}
+
+//Admin menu
 html {
   &.overlay-open .navbar-fixed-top {
     z-index: 400;
@@ -32,6 +50,7 @@ body {
   // Fix horizontal scrolling on iOS devices.
   // http://drupal.org/node/1870076
   position: relative;
+  font-weight: @font-weight;
   &.admin-expanded.admin-vertical.admin-nw .navbar,
   &.admin-expanded.admin-vertical.admin-sw .navbar {
     margin-left: 260px;
@@ -126,12 +145,6 @@ body {
 }
 .modal-backdrop {
   z-index: 1610;
-}
-.footer {
-  margin-top: 45px;
-  padding-top: 35px;
-  padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
 }
 
 // Element invisible fix
@@ -243,6 +256,9 @@ fieldset .panel-heading a.panel-title {
   &:hover {
     text-decoration: none;
   }
+}
+.form-control {
+	.box-shadow(none);
 }
 .form-actions{
   clear: both;
@@ -649,3 +665,174 @@ table {
 .alert-danger a {
   color: darken(@alert-danger-text, 10%);
 }
+
+//Footer
+footer {
+	background-color:@gray-lighter-footer;
+}
+
+//Bootstrap Slider
+.carousel {
+	.carousel-inner {
+		> .item > img {}
+	}
+}
+
+.carousel-caption {
+	background-color:rgba(0,0,0,0.2);
+	bottom:10px;
+	padding:10px;
+	position:static;
+	
+	color:@gray-dark;
+	text-shadow:none;
+	text-align:left;
+	
+	.title, h3 {
+		margin:0 0 floor((@grid-gutter-width / 2));
+	}
+	.link {
+		display:block;
+		
+		text-align:right;
+	}
+	.bubble {display:none;}
+	.body {margin-bottom:0;}
+	
+	@media (min-width: @screen-xs) {
+		background-color:rgba(255,255,255,0.85);
+		position:absolute;
+	}
+	
+	@media (min-width: @screen-sm) {
+		width:255px;
+		padding:20px @grid-gutter-width;
+		bottom:5px;
+		left:10%;
+		
+		.title, h3 {
+			font-size:@font-size-base;
+			color:@brand-primary;
+		}
+		
+		.bubble {
+			position:absolute;
+			top:-19px;
+			right:-80px;
+			display:block;
+			width:128px;
+			height:90px;
+			background:url("@{images-path}/anno_sprites.png") no-repeat 0 -535px transparent;
+			padding: 20px 15px 0;
+			
+			color:#fff;
+			text-transform:uppercase;
+			text-align:center;
+			font-size:18px;
+			line-height:1.1;
+		}
+	}
+	
+	@media (min-width: @screen-md) {
+		bottom:53px;
+		
+		.title, h3 {
+			font-size:@font-size-h1;
+		}
+	}
+}
+
+.carousel-control {
+  opacity: 1;
+  background-image:none !important;
+  
+  .icon-prev,
+  .icon-next {
+	height:@carousel-control-size;
+	width:@carousel-control-size;
+	margin-top:(-1)*floor((@carousel-control-size / 2));
+  }
+  .icon-prev {margin-left:(-1)*@carousel-control-size;}
+  .icon-next {margin-right:(-1)*@carousel-control-size;}
+  
+  .icon-prev:before,
+  .icon-next:before {
+	content:'';
+	display:block;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:rgba(255,255,255,0.8);
+	border-radius:50%;
+  }
+  .icon-prev:after,
+  .icon-next:after {
+	.arrow();
+	line-height: @carousel-control-size;
+	color:@brand-primary;
+	
+	position:relative;
+	display:inline-block;
+  }
+  .icon-prev {
+    &:after {
+      content: "\25C4";
+    }
+  }  
+}
+
+.carousel-indicators li {background-color:rgba(255,255,255,0.8);}
+
+//Jumbotron
+.jumbotron {
+	background-image:url("@{images-path}/jumbotron.png");
+	background-repeat:no-repeat;
+    background-position:10px 1px;
+	padding-left:floor((@grid-gutter-width / 2));
+	padding-right:floor((@grid-gutter-width / 2));
+	
+	p {
+		line-height:@line-height-small;
+		font-weight:@font-weight;
+	}
+}
+
+// Nodes
+@media (min-width: @screen-sm) {
+	.node .content {
+		.field-name-field-image {
+			float:left;
+			margin:0 30px 30px 0;
+		}
+		.field-name-body h2 {clear:left;}
+	}
+}
+
+
+//Mixins
+.inline-list {
+	list-style:none;
+	list-style-image:none;
+	overflow:hidden;
+	padding:0;
+	
+	& li {
+		float:left;
+		padding:0 4px;
+	  }
+}
+
+.arrow {
+	font-family: Arial;
+    font-style: normal;
+	font-size:15px;
+    font-weight: 400;
+	content: '\25BA';
+}
+
+b,strong {
+  font-weight: @font-weight-bold;
+}
+
