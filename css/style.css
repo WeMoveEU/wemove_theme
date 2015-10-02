@@ -69,7 +69,7 @@
     font-weight: 300;
     font-style: italic;
 }*/
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400,700);
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -439,7 +439,7 @@ h6,
 .h6,
 big {
   font-family: inherit;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.1;
   color: #05b1b2;
 }
@@ -6842,8 +6842,23 @@ h6,
 big {
   line-height: 1.4;
 }
+.region-content p,
+.region-content li {
+  font-size: 16px;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+}
+.region-content a:hover {
+  background-color: #82d8d9;
+  border-radius: 3px;
+  -webkit-transition: background-color 0.5s linear;
+  -moz-transition: background-color 0.5s linear;
+  -o-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+}
 big {
   color: #941b80;
+  font-size: 18px;
 }
 img {
   max-width: 100%;
@@ -6859,7 +6874,7 @@ html.js input.form-autocomplete {
 }
 body {
   position: relative;
-  font-weight: 300;
+  font-weight: 400;
 }
 body.admin-expanded.admin-vertical.admin-nw .navbar,
 body.admin-expanded.admin-vertical.admin-sw .navbar {
@@ -7549,7 +7564,7 @@ footer {
 }
 .jumbotron p {
   line-height: 1.7;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   .node .content .field-name-field-image {
@@ -7579,7 +7594,13 @@ footer {
 }
 b,
 strong {
-  font-weight: 400;
+  font-weight: 700;
+}
+.form-checkboxes input[type='checkbox'] {
+  margin-left: 0;
+}
+.form-radios input[type='radio'] {
+  margin-left: 0;
 }
 .lead-font-size {
   font-size: 22px;
@@ -7598,7 +7619,7 @@ header .navbar-header {
   float: none;
 }
 header .navbar-header .lead {
-  font-weight: 400;
+  font-weight: 700;
   color: #05b1b2;
   text-transform: uppercase;
   font-size: 22px;
@@ -7613,6 +7634,9 @@ header .navbar-header .lead {
   header .navbar-header .lead {
     font-size: 61px;
   }
+}
+header .navbar-header .lead a {
+  color: #05b1b2;
 }
 @media (min-width: 768px) {
   header .navbar-header .lead {
@@ -7719,7 +7743,7 @@ header .region-navigation #block-locale-language ul a.active {
   margin-bottom: 40px;
 }
 .main-container .region-header #block-menu-menu-sub-menu {
-  font-weight: 400;
+  font-weight: 700;
   display: table;
   width: 100%;
   height: 3em;
@@ -7741,6 +7765,11 @@ header .region-navigation #block-locale-language ul a.active {
   padding-bottom: 13px;
 }
 .main-container .region-header #block-menu-menu-sub-menu > ul > li a:hover {
+  background-color: #82d8d9;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
   color: #000;
 }
 .main-container .region-header #block-menu-menu-sub-menu > ul > li > a {
@@ -7849,7 +7878,7 @@ header .region-navigation #block-locale-language ul a.active {
 .main-container .region-content #block-block-4 {
   background-color: #66084e;
   margin-bottom: 15px;
-  font-weight: 400;
+  font-weight: 700;
 }
 .main-container .region-content #block-block-4 p {
   font-size: 22px;
@@ -7889,7 +7918,7 @@ header .region-navigation #block-locale-language ul a.active {
   margin-bottom: 15px;
   padding-left: 25px;
   padding-right: 20px;
-  font-weight: 400;
+  font-weight: 700;
 }
 .main-container .region-content #block-block-5 p {
   font-size: 22px;
@@ -8012,7 +8041,7 @@ footer .region-footer {
   background-color: #d9d9d9;
 }
 footer .region-footer #block-system-main-menu {
-  font-weight: 400;
+  font-weight: 700;
 }
 footer .region-footer #block-system-main-menu ul {
   list-style: none;

@@ -18,6 +18,7 @@
 @brand-primary:         #941b80; 
 @brand-success:         #5cb85c;
 @brand-info:            #05b1b2;
+@brand-info-light:           mix(@brand-info,#fff,50%);
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 
@@ -44,12 +45,15 @@
 //## Font, line-height, and color for body text, headings, and more.
 
 @font-family-sans-serif:  Oswald,"Helvetica Neue", Helvetica, Arial, sans-serif;
+//@font-family-content:  Roboto, sans-serif;
+@font-family-content:  'Open Sans', sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
-@font-weight:    	300;
-@font-weight-bold:  400;
+@font-weight-light:    	300;
+@font-weight:    	400;
+@font-weight-bold:  700;
 
 @font-size-base:          14px;
 @font-size-xlarge:        ceil((@font-size-base * 4.29)); // ~60px
@@ -371,7 +375,7 @@
 @navbar-collapse-max-height:       340px;
 
 @navbar-default-color:             #9c9c9c;
-@navbar-default-bg:                transparent;
+@navbar-default-bg:                @gray-light;
 @navbar-default-border:            transparent;
 
 // Navbar links
@@ -397,7 +401,7 @@
 //=== Inverted navbar
 // Reset inverted navbar basics
 @navbar-inverse-color:                      lighten(@gray-light, 15%);
-@navbar-inverse-bg:                         #222;
+@navbar-inverse-bg:                         @gray-light;
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
@@ -875,3 +879,10 @@
 
 //Mixins
 @images-path: '../images';
+
+.transition-properties(...) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}

@@ -82,7 +82,7 @@
     <div class="navbar-header">
 		<div class="navbar-header-inner">
 		  <?php if (!empty($site_slogan)): ?>
-			<p class="lead col-xs-8"><?php print $site_slogan; ?></p>
+			<p class="lead col-xs-8 slogan"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_slogan; ?></a></p>
 		  <?php endif; ?>
 		  
 		  <?php if ($logo): ?>

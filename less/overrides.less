@@ -22,9 +22,26 @@ h4, .h4,
 h5, .h5, 
 h6, .h6 {line-height:@headings-line-height-large;}
 
+.region-content p, .region-content li {
+font-size:@font-size-medium;
+//font-size:@font-size-large;
+//letter-spacing:0.02em;
+text-align:justify;
+font-family:@font-family-content;
+}
+
+.region-content a:hover {
+  background-color:@brand-info-light;
+  border-radius:3px;
+  .transition-properties(background-color .5s linear;)
+}
+
 // Styles
 big:extend(.h3) {
 	color:@brand-primary;
+        font-size:@font-size-large;
+//        font-family:@font-family-base;
+//        font-weight:@font-weight-light;
 }
 
 //Images
@@ -835,4 +852,7 @@ footer {
 b,strong {
   font-weight: @font-weight-bold;
 }
+
+.form-checkboxes input[type='checkbox'] {margin-left:0}
+.form-radios input[type='radio'] {margin-left:0}
 
