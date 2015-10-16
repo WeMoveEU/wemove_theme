@@ -8058,6 +8058,35 @@ header .region-navigation #block-locale-language ul a.active {
 body.front #block-system-main {
   display: none;
 }
+/* Donation page for mobile */
+@media (max-width: 480px) {
+  #priceset-div,
+  #billing-payment-block,
+  #priceset-div + .crm-section {
+    padding-bottom: 20px;
+  }
+  #priceset-div .label,
+  #billing-payment-block .label,
+  #priceset-div + .crm-section .label {
+    float: none;
+    padding: 0;
+  }
+  #priceset-div .content,
+  #billing-payment-block .content,
+  #priceset-div + .crm-section .content {
+    margin-left: auto;
+  }
+  #priceset-div .crm-section,
+  #billing-payment-block .crm-section,
+  #priceset-div + .crm-section .crm-section {
+    padding-top: 20px;
+  }
+  #priceset-div legend,
+  #billing-payment-block legend,
+  #priceset-div + .crm-section legend {
+    margin-bottom: -30px;
+  }
+}
 footer {
   padding-bottom: 15px;
   padding-top: 5px;
