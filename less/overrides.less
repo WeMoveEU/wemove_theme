@@ -713,12 +713,33 @@ footer {
 		
 		text-align:right;
 	}
-	.bubble {display:none;}
+	.bubble {
+      display:block;
+      position:absolute;
+      top:30px;
+      left:30px;
+      width:128px;
+      height:90px;
+      background:url("@{images-path}/anno_sprites.png") no-repeat 0 -535px transparent;
+      padding:20px 15px 0;
+      color:#fff;
+      text-transform:uppercase;
+      text-align:center;
+      font-size:18px;
+      line-height:1.1;
+
+    }
 	.body {margin-bottom:0;}
 	
 	@media (min-width: @screen-xs) {
 		background-color:rgba(255,255,255,0.85);
 		position:absolute;
+
+        .bubble {
+            top: -28px;
+            right: 2px;
+            left: auto;
+        }
 	}
 	
 	@media (min-width: @screen-sm) {
@@ -733,20 +754,9 @@ footer {
 		}
 		
 		.bubble {
-			position:absolute;
 			top:-19px;
 			right:-80px;
-			display:block;
-			width:128px;
-			height:90px;
-			background:url("@{images-path}/anno_sprites.png") no-repeat 0 -535px transparent;
-			padding: 20px 15px 0;
-			
-			color:#fff;
-			text-transform:uppercase;
-			text-align:center;
-			font-size:18px;
-			line-height:1.1;
+            left: auto;
 		}
 	}
 	
