@@ -15,12 +15,12 @@
 @gray-lighter:           #ececec;
 @gray-lighter-footer:    #d9d9d9;
 
-@brand-primary:         #941b80; 
-@brand-success:         #5cb85c;
-@brand-info:            #05b1b2;
+@brand-primary:         #941b80; //purple 
+@brand-success:         #5cb85c; //green
+@brand-info:            #05b1b2; //tile
 @brand-info-light:           mix(@brand-info,#fff,50%);
-@brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
+@brand-warning:         #f77300;//orange
+@brand-danger:          #da0000;//red
 
 
 //== Scaffolding
@@ -374,12 +374,12 @@
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
-@navbar-default-color:             #9c9c9c;
-@navbar-default-bg:                @gray-light;
+@navbar-default-color:             @brand-primary;
+@navbar-default-bg:                @gray-lighter-footer;
 @navbar-default-border:            transparent;
 
 // Navbar links
-@navbar-default-link-color:                #777;
+@navbar-default-link-color:                @brand-primary;
 @navbar-default-link-hover-color:          #333;
 @navbar-default-link-hover-bg:             transparent;
 @navbar-default-link-active-color:         #555;
