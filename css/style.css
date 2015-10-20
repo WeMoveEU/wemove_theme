@@ -8059,7 +8059,7 @@ body.front #block-system-main {
   display: none;
 }
 /* Donation page for mobile */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   #priceset-div,
   #billing-payment-block,
   #priceset-div + .crm-section {
