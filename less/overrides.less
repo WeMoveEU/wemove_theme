@@ -45,7 +45,10 @@ big:extend(.h3) {
 }
 
 //Images
-img {max-width:100%;}
+img {
+	max-width:100%;
+	height:auto;	
+}
 
 //Admin menu
 html {
@@ -837,6 +840,30 @@ footer {
 	}
 }
 
+
+// Views
+.view {
+	.views-bootstrap-grid-plugin-style {
+		margin-bottom:@grid-gutter-width;	
+               img {height:auto;}
+			   
+               .views-field-field-link {
+					a {
+						color:@gray-dark;
+						
+						&:hover {
+							text-decoration:none;
+						}
+						
+						h3, .h3 {
+							margin:0;
+							padding-top:2 * @padding-large-vertical;
+							padding-bottom:@padding-large-vertical;
+						}
+					}
+               }
+        }
+}
 
 //Mixins
 .inline-list {
