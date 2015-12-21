@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400,700);
 /*@font-face {
     font-family: 'Oswald';
     src: url('@{icon-font-path}oswald-regular-webfont.eot');
@@ -69,7 +70,6 @@
     font-weight: 300;
     font-style: italic;
 }*/
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400,700);
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -6862,6 +6862,7 @@ big {
 }
 img {
   max-width: 100%;
+  height: auto;
 }
 html.overlay-open .navbar-fixed-top {
   z-index: 400;
@@ -7582,6 +7583,24 @@ footer {
     clear: left;
   }
 }
+.view .views-bootstrap-grid-plugin-style {
+  margin-bottom: 30px;
+}
+.view .views-bootstrap-grid-plugin-style img {
+  height: auto;
+}
+.view .views-bootstrap-grid-plugin-style .views-field-field-link a {
+  color: #1d1d1d;
+}
+.view .views-bootstrap-grid-plugin-style .views-field-field-link a:hover {
+  text-decoration: none;
+}
+.view .views-bootstrap-grid-plugin-style .views-field-field-link a h3,
+.view .views-bootstrap-grid-plugin-style .views-field-field-link a .h3 {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
 .inline-list {
   list-style: none;
   list-style-image: none;
@@ -8086,6 +8105,13 @@ body.front #block-system-main {
   #priceset-div + .crm-section legend {
     margin-bottom: -30px;
   }
+}
+/* grid */
+td .radio input[type="radio"],
+td .radio-inline input[type="radio"],
+td .checkbox input[type="checkbox"],
+td .checkbox-inline input[type="checkbox"] {
+  margin-left: 0;
 }
 footer {
   padding-bottom: 15px;
