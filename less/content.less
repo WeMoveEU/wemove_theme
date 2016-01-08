@@ -7,6 +7,7 @@
 			line-height:2.5;
 			text-transform:uppercase;
 			color:#fff;
+			text-align:left;
 			
 			a {
 				color:#fff;
@@ -133,41 +134,43 @@
 			.violet-block();
 			font-weight:@font-weight-bold;
 			p a {
-				padding-left:75px;
-				background:url("@{images-path}/anno_sprites.png") no-repeat 25px -389px transparent;
+				padding-left:60px;
+				background:url("@{images-path}/anno_sprites.png") no-repeat 10px -388px transparent;
 				display:block;
 			}
 			@media (min-width: @screen-sm) {
 				float:right;
-				width:25%;
+				width:23%;
 			}
 		}
 		
 		//JOIN US (SOCIAL MEDIA)
 		#block-block-5 {
 			.violet-block();
-			padding-left:25px;
-			padding-right:20px;
+			padding-left:floor((@grid-gutter-width / 2));
+			padding-right:floor((@grid-gutter-width / 2));
 			font-weight:@font-weight-bold;
 			
 			p { 
 				a {
 					display:inline-block;
-					margin:0 5px 5px;
+					margin:0 2px 5px;
 					width:33px;
 					height:33px;
 					background:url("@{images-path}/social_media_sprites.png") no-repeat 0 -43px transparent;
 					overflow:hidden;
 					
-					text-indent:-99px;
+					text-indent:-199px;
 					vertical-align:middle;
 				}
 				a.twitter {background-position:-51px -43px;}
+				a.yt {background-position:-97px -43px;}
 			}
 			
 			@media (min-width: @screen-sm) {
 				float:left;
-				width:40.6667%;
+				width:46%;
+				padding-left:floor((@grid-gutter-width / 3));
 			}
 		}
 		
@@ -204,8 +207,9 @@
 			}
 			
 			@media (min-width: @screen-sm) {
+			    padding-left:0;
 				float:left;
-				width:33%;
+				width:30%;
 			}
 		}
 		
@@ -228,7 +232,8 @@
 }
 
 //temp
-body.front #block-system-main {display:none;}
+body.front #block-system-main,
+body.front h1.page-header {display:none;}
 
 /* Donation page for mobile */
 @media (max-width: @screen-sm) {
