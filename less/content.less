@@ -3,8 +3,8 @@
 		background-color:#66084e;
 		margin-bottom:floor((@grid-gutter-width / 2));
 		p {
-			font-size:@font-size-h3;
-			line-height:2.5;
+			font-size:@font-size-h4;
+			line-height:3.1;
 			text-transform:uppercase;
 			color:#fff;
 			text-align:left;
@@ -256,8 +256,131 @@ body.front h1.page-header {display:none;}
 }
 
 /* grid */
-td .radio input[type="radio"], td .radio-inline input[type="radio"], td .checkbox input[type="checkbox"], td .checkbox-inline input[type="checkbox"]
-{
+td .radio input[type="radio"], 
+td .radio-inline input[type="radio"], 
+td .checkbox input[type="checkbox"], 
+td .checkbox-inline input[type="checkbox"] {
   margin-left:0;
 }
 
+
+
+// CONTENT - NODE
+body.node-type-webform .region-content .node {
+        .field-name-body {
+                &:extend(.jumbotron);
+                background-position:100% -1px;
+                margin-bottom:25px;
+
+        }
+        & > .links {
+                display:none;
+        }
+}
+
+@media (min-width: @screen-sm) {
+        .node .content {
+                .field-name-field-image {
+                        float:left;
+                        margin:0 30px 30px 0;
+                }
+                .field-name-body h2 {clear:left;}
+        }
+}
+
+
+// CONTENT - NODE - YOU
+body.page-node-125 {
+    
+    h1.page-header {&:extend(.sr-only);}
+
+    .region-content .node {   
+        .btn-start {
+                display:inline-block;
+
+                &:hover {
+                      background:none;
+                      transition:none;
+                }
+
+                .text {
+                      display:inline-block;
+                      padding-right:60px;
+                      margin:0;
+                      position:relative;
+                      line-height:103px;
+
+                      &:after {
+                              content:'';
+                              display:block;
+                              position:absolute;
+                              right:30px;
+                              top:36px;
+                              width:0;
+                              height:0;
+                              border-left:15px solid @brand-info;
+                              border-top:15px solid transparent;
+                              border-bottom:15px solid transparent;                               
+                      }
+
+                }
+                .image {
+                       display:none;
+                       background:url("@{images-path}/btn_start.png") no-repeat 0 0 transparent;
+                       width:196px;
+                       height:103px;
+                       vertical-align:middle;
+                       overflow:hidden;
+                       text-indent:-999px;
+
+                       @media all and (min-width:@screen-md) {
+                            display:inline-block;
+                       }
+                }
+        }
+
+        .block-bubbles {
+                background-color:@gray-lighter-footer;
+                background-image:url("@{images-path}/bubble_sprites.png");
+                background-repeat:no-repeat;
+                background-position:-100px -100px;
+
+                .col-sm-7 {
+                       padding-left:@grid-gutter-width;
+                       padding-bottom:@grid-gutter-width;
+               }
+  
+               h2.h1 {
+                       margin-bottom:@grid-gutter-width;
+               } 
+
+               ul {
+                       padding-left:floor((@grid-gutter-width / 3));
+                       li {
+                            list-style:none;
+                            padding-left:floor((@grid-gutter-width / 2));
+                            position:relative;
+                            &:before {
+                                  content:'';
+                                  display:block;
+                                  position:absolute;
+                                  left:0;
+                                  top:11px;
+                                  width:0;
+                                  height:0;
+                                  border-left:5px solid @brand-info;
+                                  border-top:5px solid transparent;
+                                  border-bottom:5px solid transparent;
+                            }
+                       }
+               }
+
+               @media all and (min-width:@screen-md) {
+                        background-color:@gray-lighter-footer;
+                        background-image:url("@{images-path}/bubble_sprites.png"), url("@{images-path}/bubble_sprites.png");
+                        background-repeat:no-repeat, no-repeat;
+                        background-position:-100px -100px, -919px -142px;
+               }
+        }
+    }
+}

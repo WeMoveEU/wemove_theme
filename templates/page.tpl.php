@@ -73,16 +73,21 @@
  * @ingroup themeable
  */
 ?>
+<div class="navbar-wrapper">
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-  <div class="container">
     <?php if (!empty($page['navigation'])): ?>
       <?php print render($page['navigation']); ?>
     <?php endif; ?>
 		  
     <div class="navbar-header">
 		<div class="navbar-header-inner">
-		  <?php if (!empty($site_slogan)): ?>
-			<p class="lead col-xs-8 slogan"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_slogan; ?></a></p>
+		  <?php if (!empty($site_slogan) || !empty($page['below_slogan']) ): ?>
+			<div class="lead slogan col-xs-8">
+                             <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+                                 <?php print $site_slogan; ?>
+                             </a>
+                             <?php print render($page['below_slogan']); ?>
+                        </div>
 		  <?php endif; ?>
 		  
 		  <?php if ($logo): ?>
@@ -91,8 +96,8 @@
 		  </a>
 		  <?php endif; ?>
 		</div>  
-  </div>
 </header>
+</div>
 
 <div class="main-container container">
 
@@ -142,6 +147,10 @@
 
   </div>
 </div>
-<footer class="footer container">
-  <?php print render($page['footer']); ?>
-</footer>
+<?php if (!empty($page['footer'])): ?>
+   <footer class="footer">
+      <div class="container">
+          <?php print render($page['footer']); ?>
+      </div>  
+   </footer>
+<?php endif; ?>

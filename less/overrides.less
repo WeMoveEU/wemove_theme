@@ -1,10 +1,12 @@
-// Bootstrap variables.
 @import 'variables.less';
 
 // Media query variables.
 @tablet:  ~"screen and (min-width: @{screen-sm-min})";
 @normal:  ~"screen and (min-width: @{screen-md-min})";
 @wide:    ~"screen and (min-width: @{screen-lg-min})";
+
+// Colors
+.text-color {color:@text-color;}
 
 // Carousel variables
 @carousel-control-size: 43px;
@@ -17,17 +19,33 @@
 }
 
 // Headlines
+.h1,.h2,.h3,.h4,.h5,.h6 {display:block;}
+h2,.h2 {
+  margin-top:0;
+  margin-bottom:5px;
+  font-weight:@font-weight;
+}
+h2, .h2,
 h3, .h3, 
 h4, .h4, 
 h5, .h5, 
 h6, .h6 {line-height:@headings-line-height-large;}
 
-.region-content p, .region-content li {
-font-size:@font-size-medium;
-//font-size:@font-size-large;
-//letter-spacing:0.02em;
-text-align:justify;
-font-family:@font-family-content;
+.region-content p, 
+.region-content li,
+.region-content .webform-client-form,
+.region-content .view {
+	font-size:@font-size-medium;
+	font-family:@font-family-content;
+}
+
+.region-content h1,
+.region-content h2,
+.region-content h3,
+.region-content .h1,
+.region-content .h2,
+.region-content .h3 {
+	font-family:@font-family-sans-serif;
 }
 
 .region-content a:hover {
@@ -129,6 +147,9 @@ body {
 }
 
 // Default navbar.
+.navbar-wrapper {
+  background-color:@gray-lighter-footer;
+}
 .navbar.container {
   @media @tablet {
     max-width: ((@container-sm - 30px));
@@ -137,10 +158,9 @@ body {
     max-width: ((@container-md - 30px));
   }
   @media @wide {
-    max-width: ((@container-lg - 30px));
+    max-width: ((@container-lg - 10px));
   }
-  margin-top: 20px;
-  > .container {
+  > .navbar-header {
     margin: 0;
     padding: 0;
     width: auto;
@@ -251,6 +271,22 @@ ul.action-links {
   }
 }
 
+// Buttons
+.btn {
+  font-family: @font-family-base;
+  font-weight:normal;
+}
+
+@media (min-width: @screen-sm) {
+
+  .btn.btn-page-title {
+    position: absolute;
+    right: floor((@grid-gutter-width / 2));
+    top: 0;
+  }
+
+}
+
 // Form elements.
 input, textarea, select, .uneditable-input {
   max-width: 100%;
@@ -307,6 +343,27 @@ a.tabledrag-handle .handle {
   height: auto;
   width: auto;
 }
+
+.form-required {
+	color:#ff0000;
+}
+
+// File input
+.form-managed-file {
+	input.form-control {
+		display: inline-block;
+		height: auto;
+		width: 60%;
+	}
+	input.form-control + button.form-submit {
+		display: inline-block;
+		float: none;
+		height: 39px;
+		margin-left: 7px;
+		vertical-align: top;
+	}
+}
+
 
 // Error containers.
 .error {
@@ -650,6 +707,14 @@ table {
   .checkbox input[type="checkbox"] {
     max-width: inherit;
   }
+
+  td .radio input[type="radio"],
+  td .radio-inline input[type="radio"],
+  td .checkbox input[type="checkbox"],
+  td .checkbox-inline input[type="checkbox"] {
+    margin-left:0;
+  }
+
 }
 
 // Exposed filters
@@ -743,7 +808,7 @@ footer {
 
         .bubble {
             top: 0;
-            right: 2px;
+            right: -33px;
             left: auto;
         }
 	}
@@ -780,6 +845,8 @@ footer {
 .carousel-control {
   opacity: 1;
   background-image:none !important;
+  z-index:10;
+  width:auto;
   
   .icon-prev,
   .icon-next {
@@ -818,7 +885,16 @@ footer {
   }  
 }
 
-.carousel-indicators li {background-color:rgba(255,255,255,0.8);}
+.carousel-indicators { 
+	bottom:-15px;
+	li {
+		background-color:rgba(255,255,255,0.8);
+	}
+	
+	@media (min-width: @screen-md) {
+		bottom:0;
+	}
+}
 
 //Jumbotron
 .jumbotron {
@@ -835,23 +911,17 @@ footer {
 }
 
 // Nodes
-@media (min-width: @screen-sm) {
-	.node .content {
-		.field-name-field-image {
-			float:left;
-			margin:0 30px 30px 0;
-		}
-		.field-name-body h2 {clear:left;}
-	}
+article.node {
+        footer {background-color:transparent;}
 }
 
 
 // Views
 .view {
-	.views-bootstrap-grid-plugin-style {
-		margin-bottom:@grid-gutter-width;	
+	.views-bootstrap-grid-plugin-style {	
                img {height:auto;}
-			   
+	
+               .col {margin-bottom:@grid-gutter-width;}		   
                .views-field-field-link {
 					a {
 						color:@gray-dark;
@@ -868,6 +938,88 @@ footer {
 					}
                }
         }
+}
+
+
+//Webform
+.webform-client-form {
+	overflow:hidden;
+	
+	.form-item {
+		margin-bottom:20px;
+		.description {
+                        &:extend(.small);
+			margin-bottom:5px;
+		}
+		
+		&.webform-container-inline {
+			& > label,
+			& > label + input,
+			& > label + .form-control	{
+				display:inline-block;
+			}
+		}
+	}
+	button.form-submit.button-primary,
+	button.form-submit.webform-previous {
+		&:extend(.btn-lg);
+	}
+    button.form-submit {
+         &:extend(.btn-primary);
+         float:right;
+    }
+	button.webform-next:after {
+		content:' >';
+	}
+	button.webform-previous {
+		float:left;
+		&:before {
+			content:'< ';
+		}
+	}
+	
+	.form-text.form-email {&:extend(.form-control);}
+	
+	.webform-datepicker {
+		.form-type-select {display:inline-block;}
+	}
+	
+	.panel {
+		background-color:#ececec;
+		box-shadow:none;
+		padding-bottom:0;
+	}
+}
+
+//Webform - 2 columns 
+@media (min-width: @screen-sm) {
+	.webform-client-form fieldset.webform-component-fieldset.two-columns {
+                background-color:#ececec;
+                box-shadow:none;
+                padding-bottom:0;
+
+		.form-item {
+			width:49%;
+			display:inline-block;
+			
+			&:nth-child(2n) {padding-left:10px;}
+			&:nth-child(2n+1) {padding-right:10px;}
+		}
+
+		.webform-container-inline {
+				& > label {
+					width:28%;
+					margin-right:0;
+					padding-right:1em;
+				}
+				& > label + .form-control,
+				& > label + input,
+                                & > label + select,
+                                & > label + textarea {
+					width:70%;
+				}
+			}	
+	}
 }
 
 //Mixins
@@ -898,7 +1050,9 @@ b,strong {
 .form-checkboxes input[type='checkbox'] {margin-left:0}
 .form-radios input[type='radio'] {margin-left:0}
 
-//## speakout specific
+
+
+// SPEAKOUT specific
 .navbar-brand img {
   background-color:@gray-lighter-footer;
   border-radius: 4px;
@@ -919,6 +1073,20 @@ b,strong {
 #rsign .btn.btn-primary {
   background-color:@btn-primary-bg;
   border: 1px solid @btn-primary-border;
+}
+
+#crm-container .label {
+  color:#333;
+}
+
+.crm-container .btn input.crm-form-submit	{
+  background:transparent;
+  font-size:inherit;
+  
+}
+
+#crm-container.crm-public #crm-submit-buttons {
+  margin-bottom:30px;
 }
 
 

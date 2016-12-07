@@ -12,22 +12,30 @@ header {
 	.navbar-header {
 		float:none;
 		
-		.lead {
+		.lead a {
 			font-weight:@font-weight-bold;
 			color:@brand-info;
 			text-transform:uppercase;
 			.lead-font-size();
-			
+                        line-height:1.2;	
+		
 			margin-bottom:0;
-                    a {
-			color:@brand-info;
-                    }
+ 
+                        &:hover {text-decoration:none;}
 		}
-		
-		
-		@media (min-width: @screen-sm) {
-			.lead {padding-left:0;}
-		}
+
+                //REGION:BELOW SLOGAN
+                .region-below-slogan .block #join-counter,
+                .region-below-slogan .block #join-counter a  {
+                        font-weight:400;
+                        color:@gray-darker;
+                        text-transform:none;
+                        .blue {color:@brand-info;}
+
+                        @media (min-width: @screen-md) {
+                             font-size:@font-size-h2; 
+                        } 
+                 }
 		
 	}
 	
@@ -102,25 +110,52 @@ header {
 			}
 		}
 	}
-	
-	//Media Queries
-	@media (min-width: @screen-sm) {
-		.region-navigation .block,
-		.region-navigation #block-search-form {
-			float:left;
-			margin-right:20px;
-		}
-		.region-navigation #block-search-form {width:265px;}
 
-		.navbar-header-inner {
-			display:table-row;
-			
-			.logo, .lead {
-				display:table-cell;
-				float:none;
-			}
-			.lead {vertical-align: middle; padding-bottom:30px;}
-			.logo img {margin:-35px 0 0 -3px;}
-		}
-	}
+        // Media Queries
+        @media all and (min-width:@screen-xs) {
+                .navbar-header-inner {
+                        .lead {padding-left:0;}
+                        .logo img {margin-top:-51px;}
+                }
+        } 
+        @media all and (min-width:@screen-sm) {
+                .region-navigation .block,
+                .region-navigation #block-search-form {
+                        float:left;
+                        margin-right:20px;
+                } 
+                .region-navigation #block-search-form {
+                        width:265px;
+                }
+                .navbar-header-inner {
+                        display:table;
+                        width:100%;
+
+                        .logo,
+                        .lead {
+                              display:table-cell;
+                              float:none;
+                        }
+                        .lead {
+                              vertical-align:bottom;
+                              padding-bottom:20px;
+                              margin-bottom:0; 
+                        }
+                        .logo {
+                              text-align:right;
+                              img {margin:-50px 0 17px -3px;} 
+                        }
+                }            
+        }
+
+}
+
+// NODE - SPECIFIC
+body.you-page {
+        .navbar-header {
+                .lead a {color:@brand-primary;}
+                .logo img {
+                         max-height:155px;
+                }
+        } 
 }
