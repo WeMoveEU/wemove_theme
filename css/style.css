@@ -8245,7 +8245,7 @@ body.you-page .navbar-header .logo img {
 }
 @media (min-width: 768px) {
   .main-container .region-highlighted #block-block-1 {
-    background: url("../images/logo.png") no-repeat 13px 50% transparent;
+    background: url("../images/logo.svg") no-repeat 13px 50% transparent;
     background-size: auto 210px;
     margin-top: -7px;
     padding-left: 352px;
