@@ -1,0 +1,16 @@
+// Fonts
+@import '../fonts.less'
+
+// Bootstrap library.
+@import '../bootstrap.less';
+
+// Base-theme overrides.
+@import 'common.less';
+
+// Theme specific.
+@import 'header.less';
+@import 'content.less';
+@import 'footer.less';
+
+// Others
+@import '../core.less';

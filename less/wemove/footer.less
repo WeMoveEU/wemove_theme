@@ -1,0 +1,45 @@
+footer {
+	padding-bottom:floor((@grid-gutter-width / 2));
+	padding-top:floor((@grid-gutter-width / 6));
+	
+	.region-footer {
+		background-color: @gray-lighter-footer;
+		
+		#block-system-main-menu {
+			font-weight:@font-weight-bold;
+			ul {
+				.inline-list();
+				li a {
+					padding-left:4px;
+					padding-right:4px;
+				}
+			}
+			@media (min-width: @screen-md) {
+				float:left;
+			}
+		}
+		
+		#block-block-2 {
+			p {
+				a {
+					display:inline-block;
+					margin:0 5px;
+					width:18px;
+					height:18px;
+					background:url("@{images-path}/social_media_sprites.png") no-repeat 0 0 transparent;
+					overflow:hidden;
+					
+					text-indent:-99px;
+					vertical-align:middle;
+				}
+				a.twitter {background-position:-28px 0;}
+				a:first-child {margin-left:20px;}
+			}
+			@media (min-width: @screen-md) {
+				float:right;
+				padding:10px 40px 0 0; 
+			}
+		}
+		
+	}
+}
