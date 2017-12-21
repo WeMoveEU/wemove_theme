@@ -17,10 +17,10 @@
     </button>
     <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
          <ul class="nav navbar-nav" id="main-menu">
-            <li><a href="<?php print $youmove_url;?>/you">HOME</a></li>
-            <li><a href="<?php print $youmove_url;?>/you/create">START A CAMPAIGN</a></li>
-            <li><a href="<?php print $youmove_url;?>/you#campaigns">CAMPAIGNS</a></li>
-            <li><a href="<?php print $youmove_url;?>/civicrm/contribute/transact?reset=1&amp;id=1">DONATE</a></li>
+            <li><a href="/you">HOME</a></li>
+            <li><a href="/you/create">START A CAMPAIGN</a></li>
+            <li><a href="/you#campaigns">CAMPAIGNS</a></li>
+            <li><a href="/civicrm/contribute/transact?reset=1&amp;id=1">DONATE</a></li>
           </ul>
     </div><!-- /.navbar-collapse -->
 
