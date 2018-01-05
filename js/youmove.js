@@ -41,8 +41,31 @@
 
   Drupal.behaviors.youmove_replaceValidationUI = {
     attach: function(context) {
-        replaceValidationUI();
-        //$('.what-do-you-want-them-to-do').tooltip({title : 'top kjashkjdh ksa hdkhsa dskja hdksah dksa'});
+        var errorContainerClass = 'error-container';
+
+        $( "button:not([type=button]), input[type=submit]" ).on( "click", function( event ) {
+            $( ":invalid", $('form') ).each(function(index) {
+                var errorMsg = this.validationMessage;
+
+                if(errorMsg) {
+                    var parent = $(this).closest('.form-group');
+                    if(parent){
+                        if(parent.find('.' + errorContainerClass).length === 0){
+                            parent.append($('<span class="' + errorContainerClass + '"></span>'));
+                        }
+                        var errorContainer = parent.find('.' +errorContainerClass);
+                        errorContainer.show().text(errorMsg);
+                    }
+                }
+
+            });
+        });
+
+        $('textarea,select,input').on('focusout',function(){
+            if(this.validity.valid) {
+                $(this).closest('.form-group').find('.' + errorContainerClass).hide();
+            }
+        });
     }
   };
 
@@ -55,85 +78,5 @@
    }
  }
 
-function replaceValidationUI() {
-    $( "form" ).each(function() {
-    var form = this,
-           errorCointanerID = "error-msg-container",
-           errorCointanerObj =$('<p class="alert alert-warning hidden" role="alert" id="' + errorCointanerID + '"></p>');
-
-    // Messages container
-    $(form).prepend(errorCointanerObj);
-
-    // Suppress the default bubbles
-    form.addEventListener( "invalid", function( event ) {
-        event.preventDefault();
-    }, true );
-
-    // Support Safari, iOS Safari, and the Android browser—each of which do not prevent
-    // form submissions by default
-    $( form ).on( "submit", function( event ) {
-        if ( !this.checkValidity() ) {
-            event.preventDefault();
-        }
-    });
-
-    $( "input, select, textarea", form )
-        // Destroy the tooltip on blur if the field contains valid data
-/*
-        .on( "blur", function() {
-            var field = $( this );
-                if ( this.validity.valid ) {
-                    field.tooltip( 'hide' );
-                } else {
-                    field.tooltip( 'show' );
-                }
-        })
-*/
-        // Show the tooltip on focus
-        .on( "focusout", function() {
-            if ( this.validity.valid ) {
-                var field = $( this );
-                if (field.attr('type') === 'radio') {
-                    field.closest('.form-group').find('input').each(function(){
-                        $(this).tooltip( 'destroy' );
-                    });
-                } else {field.tooltip( 'destroy' );}
-                field.closest('.form-group').removeClass('has-error');
-            } else {
-                field.tooltip( 'show' );
-            }
-        });
-
-    $( "button:not([type=button]), input[type=submit]", form ).on( "click", function( event ) {
-        // Destroy any tooltips from previous runs
-        $( 'input, select, textarea', form ).each( function() {
-            var field = $( this );
-                field.tooltip( 'destroy' );
-        });
-
-        // Add a tooltip to each invalid field and create summary
-        var errorMsgSummary = '',
-              prevElName = '' ;
-        $( ":invalid", form ).each(function(index) {
-            $( this ).closest('.form-group').addClass('has-error');
-
-            var errorMsg = this.validationMessage;
-            $( this ).tooltip({title:errorMsg});
-             $( this ).tooltip('show');
-
-             if(errorMsg && prevElName !== $(this).attr('name')) {errorMsgSummary += '<li>' +  errorMsg + '</li>' ;}
-             prevElName = $(this).attr('name');
-        });
-        if(errorMsgSummary) {
-            errorCointanerObj.html('<ul>' + errorMsgSummary + '</ul>').removeClass('hidden');
-            $('html, body').animate({
-                scrollTop: $('#'+errorCointanerID).offset().top
-            }, 200);
-        }
-
-    });
-});
-
-}// function replaceValidationUI()
 
 })(jQuery, Drupal);

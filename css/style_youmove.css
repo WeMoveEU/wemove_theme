@@ -5051,6 +5051,38 @@ fieldset[disabled] .btn.page-node-submission.you-campaign .webform-client-form .
 .tooltip .tooltip-inner {
   background-color: #ff8400;
 }
+.clientside-error.messages.error {
+  background-color: #ff8400;
+  border-color: #ff8400;
+  padding-left: 46px;
+  padding-top: 20px;
+  position: relative;
+  color: #fff;
+}
+.clientside-error.messages.error:before {
+  content: "\e101";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 35px;
+}
+.form-group .error-container {
+  display: inline-block;
+  margin-top: 5px;
+  background-color: #ff8400;
+  padding: 5px 7px;
+  color: #fff;
+}
+.form-control.error {
+  box-shadow: 0 0 0px 2px #ffdada;
+  border-color: #da0000;
+}
 header #main-menu li {
   margin-bottom: 1rem;
 }
@@ -5091,7 +5123,7 @@ header #main-menu li {
   background-color: #da0000;
   width: 35px;
   height: 45px;
-  box-shadow: 0px 0px 4px 2px #999;
+  box-shadow: 0px 0px 2px 2px #aaa;
   transition: all 0.5s ease;
   line-height: 55px;
   border-radius: 0 4px 4px 0;
@@ -5544,37 +5576,6 @@ body.page-node-125 .region-content .node .block-bubbles ul li:before {
 .node-type-webform.you-campaign .webform-client-form fieldset[disabled],
 .page-node-submission.you-campaign .webform-client-form fieldset[disabled] {
   opacity: 0.5;
-}
-.node-type-webform.you-campaign .webform-client-form #error-msg-container,
-.page-node-submission.you-campaign .webform-client-form #error-msg-container {
-  background-color: #ff8400;
-  border-color: #ff8400;
-  padding-left: 46px;
-  color: #fff;
-}
-.node-type-webform.you-campaign .webform-client-form #error-msg-container:before,
-.page-node-submission.you-campaign .webform-client-form #error-msg-container:before {
-  content: "\e101";
-  position: absolute;
-  top: 37px;
-  left: 20px;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  font-size: 35px;
-}
-.node-type-webform.you-campaign .webform-client-form .form-item.form-type-radios .form-item.radio + .form-item.radio .tooltip,
-.page-node-submission.you-campaign .webform-client-form .form-item.form-type-radios .form-item.radio + .form-item.radio .tooltip,
-.node-type-webform.you-campaign .webform-client-form .form-item.form-type-checkboxes .form-item.radio + .form-item.radio .tooltip,
-.page-node-submission.you-campaign .webform-client-form .form-item.form-type-checkboxes .form-item.radio + .form-item.radio .tooltip,
-.node-type-webform.you-campaign .webform-client-form .form-item.form-type-radios .form-item.radio + .form-item.radio .tooltip,
-.page-node-submission.you-campaign .webform-client-form .form-item.form-type-radios .form-item.radio + .form-item.radio .tooltip,
-.node-type-webform.you-campaign .webform-client-form .form-item.form-type-checkboxes .form-item.radio + .form-item.radio .tooltip,
-.page-node-submission.you-campaign .webform-client-form .form-item.form-type-checkboxes .form-item.radio + .form-item.radio .tooltip {
-  display: none !important;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component.form-type-checkboxes .form-checkboxes .checkbox label,
 .page-node-submission.you-campaign .webform-client-form .webform-component.form-type-checkboxes .form-checkboxes .checkbox label {
