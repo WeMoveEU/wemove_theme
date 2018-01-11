@@ -5,7 +5,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header pull-left">
-      <a class="navbar-brand" href="<?php  print $front_page; ?>">
+      <a class="navbar-brand" href="/">
           <img src="<?php print $youmove_url;?>/images/wemove/logo.png">
       </a>
     </div>
@@ -17,10 +17,10 @@
     </button>
     <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
          <ul class="nav navbar-nav" id="main-menu">
-            <li><a href="/you">HOME</a></li>
-            <li><a href="/you/create">START A CAMPAIGN</a></li>
-            <li><a href="/you#campaigns">CAMPAIGNS</a></li>
-            <li><a href="/civicrm/contribute/transact?reset=1&amp;id=1">DONATE</a></li>
+            <li><a href="/you"><?php print t('YOUMOVE CAMPAIGNS'); ?></a></li>
+            <li><a href="/you/create"><?php print t('START A CAMPAIGN'); ?></a></li>
+            <li><a href="/user"><?php print t('LOG-IN'); ?></a></li>
+            <li><a href="/civicrm/contribute/transact?reset=1&amp;id=1"><?php print t('DONATE'); ?></a></li>
           </ul>
     </div><!-- /.navbar-collapse -->
 
@@ -81,14 +81,14 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-3">
-	<div style="padding: 20px 0">
-	  <img src="<?php print $youmove_url;?>/images/wemove/logo.png" style="width: 190px">
-	</div>
+        <div style="padding: 20px 0">
+          <img src="<?php print $youmove_url;?>/images/wemove/logo.png" style="width: 190px">
+        </div>
       </div>
       <div class="col-sm-9">
-	<div class="row" style="margin-top: 20px">
-	  <p id="disclaimer">Petitions on you.wemove.eu are started and run by civil society groups and members of the public. WeMove.EU hosts these petitions and they are in line with our values but they are not necessarily endorsed by WeMove.EU.</p>
-	</div>
+        <div class="row" style="margin-top: 20px">
+          <p id="disclaimer"><?php print t('Petitions on you.wemove.eu are started and run by civil society groups and members of the public. WeMove.EU hosts these petitions and they are in line with our values but they are not necessarily endorsed by WeMove.EU.'); ?></p>
+        </div>
       </div>
     </div>
   </div>
