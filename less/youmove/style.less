@@ -204,7 +204,7 @@ a.btn:hover,
 }
 
 .form-control.error {
-    box-shadow: 0 0 0px 2px lighten(@brand-danger, 50%); 
+    box-shadow: 0 0 0px 2px lighten(@brand-danger, 50%);
     border-color: @brand-danger;
 }
 
@@ -275,6 +275,18 @@ a.btn:hover,
             font-size:20px;
             padding-left: 5px;
             color:#fff;
+        }
+
+        @media all and (min-width:@screen-md) {
+           width:80px;
+           height:80px;
+           right:-80px;
+
+           .glyphicon {
+               top:18px;
+               left:8px;
+               font-size: 41px;
+           }
         }
     }
 
@@ -1050,6 +1062,11 @@ body.page-node-125 {
             .form-item {
                 label {
                     color:#fff;
+                }
+                input[type="text"],
+                input[type="email"],
+                select {
+                    width:100%;
                 }
             }
 

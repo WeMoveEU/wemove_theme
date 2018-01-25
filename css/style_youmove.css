@@ -2417,7 +2417,7 @@ fieldset[disabled] .btn-default.active {
 .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a {
   color: #ffffff;
   background-color: #cf0404;
-  border-color: #ca0404;
+  border-color: #b60404;
 }
 .btn-primary:focus,
 .btn-primary.focus,
@@ -2431,7 +2431,7 @@ fieldset[disabled] .btn-default.active {
 .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.focus {
   color: #ffffff;
   background-color: #9d0303;
-  border-color: #4d0101;
+  border-color: #390101;
 }
 .btn-primary:hover,
 .node-type-webform.you-campaign ul.tabs--primary > li > a:hover,
@@ -2440,7 +2440,7 @@ fieldset[disabled] .btn-default.active {
 .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a:hover {
   color: #ffffff;
   background-color: #9d0303;
-  border-color: #8e0303;
+  border-color: #7a0202;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -2459,7 +2459,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a {
   color: #ffffff;
   background-color: #9d0303;
-  border-color: #8e0303;
+  border-color: #7a0202;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -2508,7 +2508,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.focus {
   color: #ffffff;
   background-color: #7a0202;
-  border-color: #4d0101;
+  border-color: #390101;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -2618,7 +2618,7 @@ fieldset[disabled] .page-node-submission.you-campaign .webform-client-form .webf
 .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a[disabled].active,
 fieldset[disabled] .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.active {
   background-color: #cf0404;
-  border-color: #ca0404;
+  border-color: #b60404;
 }
 .btn-primary .badge,
 .node-type-webform.you-campaign ul.tabs--primary > li > a .badge,
@@ -2641,7 +2641,7 @@ fieldset[disabled] .page-node-submission.you-campaign .webform-client-form .webf
 .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a {
   color: #ffffff;
   background-color: #5cb85c;
-  border-color: #58b658;
+  border-color: #4cae4c;
 }
 .btn-success:focus,
 .btn-success.focus,
@@ -2667,7 +2667,7 @@ fieldset[disabled] .page-node-submission.you-campaign .webform-client-form .webf
 .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.focus {
   color: #ffffff;
   background-color: #449d44;
-  border-color: #2c642c;
+  border-color: #255625;
 }
 .btn-success:hover,
 .node-type-webform.you-campaign .webform-client-form .form-actions .btn:hover,
@@ -2682,7 +2682,7 @@ fieldset[disabled] .page-node-submission.you-campaign .webform-client-form .webf
 .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a:hover {
   color: #ffffff;
   background-color: #449d44;
-  border-color: #409240;
+  border-color: #398439;
 }
 .btn-success:active,
 .btn-success.active,
@@ -2719,7 +2719,7 @@ fieldset[disabled] .page-node-submission.you-campaign .webform-client-form .webf
 .open > .dropdown-toggle.page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a {
   color: #ffffff;
   background-color: #449d44;
-  border-color: #409240;
+  border-color: #398439;
 }
 .btn-success:active:hover,
 .btn-success.active:hover,
@@ -2822,7 +2822,7 @@ fieldset[disabled] .page-node-submission.you-campaign .webform-client-form .webf
 .open > .dropdown-toggle.page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.focus {
   color: #ffffff;
   background-color: #398439;
-  border-color: #2c642c;
+  border-color: #255625;
 }
 .btn-success:active,
 .btn-success.active,
@@ -3058,7 +3058,7 @@ fieldset[disabled] .page-node-submission.you-campaign .webform-client-form .form
 .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a[disabled].active,
 fieldset[disabled] .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.active {
   background-color: #5cb85c;
-  border-color: #58b658;
+  border-color: #4cae4c;
 }
 .btn-success .badge,
 .node-type-webform.you-campaign .webform-client-form .form-actions .btn .badge,
@@ -3077,25 +3077,25 @@ fieldset[disabled] .page-node-submission.you-campaign .webform-client-form .form
 .btn-info {
   color: #ffffff;
   background-color: #05b1b2;
-  border-color: #05acad;
+  border-color: #049899;
 }
 .btn-info:focus,
 .btn-info.focus {
   color: #ffffff;
   background-color: #048080;
-  border-color: #013131;
+  border-color: #011d1d;
 }
 .btn-info:hover {
   color: #ffffff;
   background-color: #048080;
-  border-color: #037172;
+  border-color: #035d5e;
 }
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
   color: #ffffff;
   background-color: #048080;
-  border-color: #037172;
+  border-color: #035d5e;
 }
 .btn-info:active:hover,
 .btn-info.active:hover,
@@ -3108,7 +3108,7 @@ fieldset[disabled] .page-node-submission.you-campaign .webform-client-form .form
 .open > .dropdown-toggle.btn-info.focus {
   color: #ffffff;
   background-color: #035d5e;
-  border-color: #013131;
+  border-color: #011d1d;
 }
 .btn-info:active,
 .btn-info.active,
@@ -3134,7 +3134,7 @@ fieldset[disabled] .btn-info:active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
   background-color: #05b1b2;
-  border-color: #05acad;
+  border-color: #049899;
 }
 .btn-info .badge {
   color: #05b1b2;
@@ -3143,25 +3143,25 @@ fieldset[disabled] .btn-info.active {
 .btn-warning {
   color: #ffffff;
   background-color: #f77300;
-  border-color: #f27100;
+  border-color: #de6700;
 }
 .btn-warning:focus,
 .btn-warning.focus {
   color: #ffffff;
   background-color: #c45b00;
-  border-color: #723500;
+  border-color: #5e2c00;
 }
 .btn-warning:hover {
   color: #ffffff;
   background-color: #c45b00;
-  border-color: #b55400;
+  border-color: #a04b00;
 }
 .btn-warning:active,
 .btn-warning.active,
 .open > .dropdown-toggle.btn-warning {
   color: #ffffff;
   background-color: #c45b00;
-  border-color: #b55400;
+  border-color: #a04b00;
 }
 .btn-warning:active:hover,
 .btn-warning.active:hover,
@@ -3174,7 +3174,7 @@ fieldset[disabled] .btn-info.active {
 .open > .dropdown-toggle.btn-warning.focus {
   color: #ffffff;
   background-color: #a04b00;
-  border-color: #723500;
+  border-color: #5e2c00;
 }
 .btn-warning:active,
 .btn-warning.active,
@@ -3200,7 +3200,7 @@ fieldset[disabled] .btn-warning:active,
 .btn-warning[disabled].active,
 fieldset[disabled] .btn-warning.active {
   background-color: #f77300;
-  border-color: #f27100;
+  border-color: #de6700;
 }
 .btn-warning .badge {
   color: #f77300;
@@ -3209,25 +3209,25 @@ fieldset[disabled] .btn-warning.active {
 .btn-danger {
   color: #ffffff;
   background-color: #da0000;
-  border-color: #d50000;
+  border-color: #c10000;
 }
 .btn-danger:focus,
 .btn-danger.focus {
   color: #ffffff;
   background-color: #a70000;
-  border-color: #550000;
+  border-color: #410000;
 }
 .btn-danger:hover {
   color: #ffffff;
   background-color: #a70000;
-  border-color: #980000;
+  border-color: #830000;
 }
 .btn-danger:active,
 .btn-danger.active,
 .open > .dropdown-toggle.btn-danger {
   color: #ffffff;
   background-color: #a70000;
-  border-color: #980000;
+  border-color: #830000;
 }
 .btn-danger:active:hover,
 .btn-danger.active:hover,
@@ -3240,7 +3240,7 @@ fieldset[disabled] .btn-warning.active {
 .open > .dropdown-toggle.btn-danger.focus {
   color: #ffffff;
   background-color: #830000;
-  border-color: #550000;
+  border-color: #410000;
 }
 .btn-danger:active,
 .btn-danger.active,
@@ -3266,7 +3266,7 @@ fieldset[disabled] .btn-danger:active,
 .btn-danger[disabled].active,
 fieldset[disabled] .btn-danger.active {
   background-color: #da0000;
-  border-color: #d50000;
+  border-color: #c10000;
 }
 .btn-danger .badge {
   color: #da0000;
@@ -4668,7 +4668,7 @@ a.page-node-submission.you-campaign .webform-client-form .webform-component.add-
 .btn.page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a {
   color: #ffffff;
   background-color: #cf0404;
-  border-color: #ca0404;
+  border-color: #b60404;
   font-size: 18px;
 }
 .btn.btn-primary:focus,
@@ -4691,7 +4691,7 @@ a.page-node-submission.you-campaign .webform-client-form .webform-component.add-
 .btn.page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.focus {
   color: #ffffff;
   background-color: #9d0303;
-  border-color: #4d0101;
+  border-color: #390101;
 }
 .btn.btn-primary:hover,
 .node-type-webform.you-campaign ul.tabs--primary > li > a.btn-primary:hover,
@@ -4704,7 +4704,7 @@ a.page-node-submission.you-campaign .webform-client-form .webform-component.add-
 .btn.page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a:hover {
   color: #ffffff;
   background-color: #9d0303;
-  border-color: #8e0303;
+  border-color: #7a0202;
 }
 .btn.btn-primary:active,
 .btn.btn-primary.active,
@@ -4735,7 +4735,7 @@ a.page-node-submission.you-campaign .webform-client-form .webform-component.add-
 .open > .dropdown-toggle.btn.page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a {
   color: #ffffff;
   background-color: #9d0303;
-  border-color: #8e0303;
+  border-color: #7a0202;
 }
 .btn.btn-primary:active:hover,
 .btn.btn-primary.active:hover,
@@ -4820,7 +4820,7 @@ a.page-node-submission.you-campaign .webform-client-form .webform-component.add-
 .open > .dropdown-toggle.btn.page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.focus {
   color: #ffffff;
   background-color: #7a0202;
-  border-color: #4d0101;
+  border-color: #390101;
 }
 .btn.btn-primary:active,
 .btn.btn-primary.active,
@@ -5014,7 +5014,7 @@ fieldset[disabled] .btn.page-node-submission.you-campaign .webform-client-form .
 .btn.page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a[disabled].active,
 fieldset[disabled] .btn.page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.active {
   background-color: #cf0404;
-  border-color: #ca0404;
+  border-color: #b60404;
 }
 .btn.btn-primary .badge,
 .node-type-webform.you-campaign ul.tabs--primary > li > a.btn-primary .badge,
@@ -5132,6 +5132,18 @@ header #main-menu li {
   font-size: 20px;
   padding-left: 5px;
   color: #fff;
+}
+@media all and (min-width: 992px) {
+  #block-views-your-campaigns-block-wrapper #block-views-your-campaigns-block-toggle {
+    width: 80px;
+    height: 80px;
+    right: -80px;
+  }
+  #block-views-your-campaigns-block-wrapper #block-views-your-campaigns-block-toggle .glyphicon {
+    top: 18px;
+    left: 8px;
+    font-size: 41px;
+  }
 }
 #block-views-your-campaigns-block-wrapper .block {
   background-color: #ececec;
@@ -5897,6 +5909,14 @@ body.page-node-125 .region-content .node .block-bubbles ul li:before {
 .node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact .form-item label,
 .page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact .form-item label {
   color: #fff;
+}
+.node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact .form-item input[type="text"],
+.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact .form-item input[type="text"],
+.node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact .form-item input[type="email"],
+.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact .form-item input[type="email"],
+.node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact .form-item select,
+.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact .form-item select {
+  width: 100%;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact[disabled],
 .page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact[disabled] {
