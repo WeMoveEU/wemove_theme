@@ -4546,6 +4546,9 @@ img {
   line-height: 1.1;
   color: #cf0404;
 }
+.navbar-brand img {
+  padding-bottom: 0;
+}
 .navbar-toggle {
   margin-right: 0;
 }
@@ -5898,7 +5901,9 @@ body.page-node-125 .region-content .node .block-bubbles ul li:before {
   margin-right: -15px;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > .form-item,
-.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > .form-item {
+.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > .form-item,
+.node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > fieldset.contact-organization,
+.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > fieldset.contact-organization {
   position: relative;
   float: left;
   width: 50%;
@@ -5925,6 +5930,15 @@ body.page-node-125 .region-content .node .block-bubbles ul li:before {
 .node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact[disabled] .form-required,
 .page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact[disabled] .form-required {
   color: #fff;
+}
+.node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact fieldset.contact-organization > .panel-body,
+.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact fieldset.contact-organization > .panel-body {
+  padding: 0;
+}
+.node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact fieldset.contact-organization > .panel-body > .form-item,
+.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact fieldset.contact-organization > .panel-body > .form-item {
+  float: none;
+  width: 100%;
 }
 :not(.page-node-submission-edit).node-type-webform.you-campaign .webform-submission,
 :not(.page-node-submission-edit).page-node-submission.you-campaign .webform-submission {

@@ -55,6 +55,9 @@
     }
 }
 
+.navbar-brand img {
+    padding-bottom: 0;
+}
 
 .navbar-toggle {
     margin-right:0;
@@ -1054,7 +1057,8 @@ body.page-node-125 {
             & > .panel-body {
                 .make-row();
 
-                & > .form-item {
+                & > .form-item,
+                & > fieldset.contact-organization {
                     .make-xs-column(6);
                 }
             }
@@ -1078,6 +1082,16 @@ body.page-node-125 {
                 }
             }
 
+            fieldset.contact-organization {
+                & > .panel-body {
+                    padding: 0;
+
+                    & > .form-item {
+                        float: none;
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 
