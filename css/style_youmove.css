@@ -5924,11 +5924,15 @@ body.page-node-125 .region-content .node .block-bubbles ul li:before {
   width: 100%;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact[disabled],
-.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact[disabled] {
+.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact[disabled],
+.node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact[disabled] fieldset,
+.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact[disabled] fieldset {
   background-color: #9c9c9c;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact[disabled] .form-required,
-.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact[disabled] .form-required {
+.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact[disabled] .form-required,
+.node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact[disabled] fieldset .form-required,
+.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact[disabled] fieldset .form-required {
   color: #fff;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact fieldset.contact-organization > .panel-body,
