@@ -5984,7 +5984,26 @@ body.page-node-125 .region-content .node .block-bubbles ul li:before {
 }
 :not(.page-node-submission-edit).node-type-webform.you-campaign .webform-submission .what-do-you-want-them-to-do label,
 :not(.page-node-submission-edit).page-node-submission.you-campaign .webform-submission .what-do-you-want-them-to-do label,
+:not(.page-node-submission-edit).node-type-webform.you-campaign .webform-submission .who-are-you-addressing label,
+:not(.page-node-submission-edit).page-node-submission.you-campaign .webform-submission .who-are-you-addressing label,
 :not(.page-node-submission-edit).node-type-webform.you-campaign .webform-submission .add-image label,
 :not(.page-node-submission-edit).page-node-submission.you-campaign .webform-submission .add-image label {
+  display: none;
+}
+:not(.page-node-submission-edit).node-type-webform.you-campaign .webform-submission .what-do-you-want-them-to-do,
+:not(.page-node-submission-edit).page-node-submission.you-campaign .webform-submission .what-do-you-want-them-to-do {
+  border: 1px solid #b3b3b3;
+  padding: 19px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+:not(.page-node-submission-edit).node-type-webform.you-campaign .webform-submission .why-is-this-important label,
+:not(.page-node-submission-edit).page-node-submission.you-campaign .webform-submission .why-is-this-important label {
+  display: block;
+}
+:not(.page-node-submission-edit).node-type-webform.you-campaign .webform-submission .webform-component-fieldset.contact,
+:not(.page-node-submission-edit).page-node-submission.you-campaign .webform-submission .webform-component-fieldset.contact {
   display: none;
 }
