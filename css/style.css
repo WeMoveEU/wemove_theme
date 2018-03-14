@@ -8359,25 +8359,25 @@ footer {
 footer .region-footer {
   background-color: #d9d9d9;
 }
-footer .region-footer #block-system-main-menu {
+footer .region-footer .block-menu {
   font-weight: 700;
 }
-footer .region-footer #block-system-main-menu ul {
+footer .region-footer .block-menu ul {
   list-style: none;
   list-style-image: none;
   overflow: hidden;
   padding: 0;
 }
-footer .region-footer #block-system-main-menu ul li {
+footer .region-footer .block-menu ul li {
   float: left;
   padding: 0 4px;
 }
-footer .region-footer #block-system-main-menu ul li a {
+footer .region-footer .block-menu ul li a {
   padding-left: 4px;
   padding-right: 4px;
 }
 @media (min-width: 992px) {
-  footer .region-footer #block-system-main-menu {
+  footer .region-footer .block-menu {
     float: left;
   }
 }

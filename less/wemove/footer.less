@@ -1,11 +1,11 @@
 footer {
 	padding-bottom:floor((@grid-gutter-width / 2));
 	padding-top:floor((@grid-gutter-width / 6));
-	
+
 	.region-footer {
 		background-color: @gray-lighter-footer;
-		
-		#block-system-main-menu {
+
+		.block-menu {
 			font-weight:@font-weight-bold;
 			ul {
 				.inline-list();
@@ -18,7 +18,7 @@ footer {
 				float:left;
 			}
 		}
-		
+
 		#block-block-2 {
 			p {
 				a {
@@ -28,7 +28,7 @@ footer {
 					height:18px;
 					background:url("@{images-path}/social_media_sprites.png") no-repeat 0 0 transparent;
 					overflow:hidden;
-					
+
 					text-indent:-99px;
 					vertical-align:middle;
 				}
@@ -37,9 +37,9 @@ footer {
 			}
 			@media (min-width: @screen-md) {
 				float:right;
-				padding:10px 40px 0 0; 
+				padding:10px 40px 0 0;
 			}
 		}
-		
+
 	}
 }
