@@ -24,6 +24,23 @@
       }
   };
 
+  Drupal.behaviors.youmove_formTooltip = {
+    attach: function(context) {
+        var tooltipSelector = '.webform-component-markup[class*="-note"]',
+               tooltipActiveClass = 'tooltip-active';
+        $(tooltipSelector).eq(0).addClass(tooltipActiveClass);
+        $('.webform-component', '.' + Drupal.settings.youmove.campaign_page_class + ' form.webform-client-form').each(function(){
+            var offsetTop = $(this).position().top;
+            $(this).next(tooltipSelector).css('top',offsetTop);
+
+            $(this).find('textarea,input[type="text"],input[type="checkbox"],input[type="radio"]').focus(function(){
+                $(tooltipSelector).removeClass(tooltipActiveClass);
+                $(this).closest('.webform-component').next(tooltipSelector).addClass(tooltipActiveClass);
+            }).focusout(function(){});
+        });
+    }
+}
+
 
   Drupal.behaviors.youmove_floatingBlock = {
     attach: function(context) {
@@ -65,6 +82,19 @@
             if(this.validity.valid) {
                 $(this).closest('.form-group').find('.' + errorContainerClass).hide();
             }
+        });
+    }
+  };
+
+  Drupal.behaviors.youmove_user_profile__password_indicator = {
+    attach: function(context) {
+        var passIndicator = $('#edit-account .form-item-pass-pass1 .progress'),
+               passCtrl = $('#edit-account .form-item-pass-pass1 input[type="password"]');
+       passIndicator.hide();
+
+        passCtrl.on('input',function(){
+            if( this.value != ''){ passIndicator.show(); }
+            else{ passIndicator.hide(); }
         });
     }
   };
