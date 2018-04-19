@@ -218,6 +218,7 @@ function wmeu_file_upload_help(array $variables) {
 
 function wmeu_form_user_pass_reset_alter(&$form, &$form_state, $form_id) {
   // Check if this is a proper form state (checking message text - this is our main condition - without checking others)
+  /*
   if (strpos($form['message']['#markup'], 'This is a one-time login for') && (count($form_state['build_info']['args']) > 1) ) {
       $uid = $form_state['build_info']['args'][0];
       $timestamp = $form_state['build_info']['args'][1];
@@ -229,8 +230,18 @@ function wmeu_form_user_pass_reset_alter(&$form, &$form_state, $form_id) {
       t('<p>Have you lost your password or haven\'t set one up yet? Click the button below and you will be able to create a new one for your account %user_name.</p><p>This link can only be used once (and will expire on %expiration_date).</p>',
       array('%user_name' => $account->name,'%expiration_date' => format_date($timestamp + $timeout)));
       unset($form['help']);
-  }
+  }*/
 }
+
+
+function wmeu_form_alter(&$form, &$form_state, $form_id) {
+    /*
+  if($form_id === 'user_profile_form') {
+      if(array_key_exists('account',$form) && array_key_exists('pass',$form['account'])) {
+          $form['account']['pass']['#description'] = t('To change your password, enter the new password in both fields.');
+      }
+  }*/
+  }
 
 
 
@@ -305,7 +316,7 @@ function wmeu_status_messages($variables){
     }
     else {
       $output .= reset($messages);
-    }
+  }
     $output .= "</div>\n";
   }
   return $output;
