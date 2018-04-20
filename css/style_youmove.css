@@ -7102,14 +7102,16 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
 .page-user-edit .region-content #block-views-user-block .panel-body {
   padding-top: 20px;
 }
-.page-user-edit .region-content #block-block-42 {
+.page-user-edit .region-content #block-block-42,
+.page-user-edit .region-content #block-block-44 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .page-user-edit .region-content #block-block-42 {
+  .page-user-edit .region-content #block-block-42,
+  .page-user-edit .region-content #block-block-44 {
     float: left;
     width: 50%;
   }
