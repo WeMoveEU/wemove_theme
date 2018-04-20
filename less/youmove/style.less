@@ -1053,6 +1053,15 @@ body.page-node-125 {
                     &.active label:before {
                         background:url("@{images-path}/ym_sprites.png") scroll no-repeat -2px -329px #fff;
                     }
+
+                    &.form-disabled {
+                        label {
+                            cursor: not-allowed;
+                        }
+                        label:before {
+                            opacity: 0.4;    
+                        }
+                    }
                 }
             }
         }

@@ -7453,6 +7453,14 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
 .page-node-submission.you-campaign .webform-client-form .webform-component.form-type-checkboxes .form-checkboxes .checkbox.active label:before {
   background: url("../images/ym_sprites.png") scroll no-repeat -2px -329px #ffffff;
 }
+.node-type-webform.you-campaign .webform-client-form .webform-component.form-type-checkboxes .form-checkboxes .checkbox.form-disabled label,
+.page-node-submission.you-campaign .webform-client-form .webform-component.form-type-checkboxes .form-checkboxes .checkbox.form-disabled label {
+  cursor: not-allowed;
+}
+.node-type-webform.you-campaign .webform-client-form .webform-component.form-type-checkboxes .form-checkboxes .checkbox.form-disabled label:before,
+.page-node-submission.you-campaign .webform-client-form .webform-component.form-type-checkboxes .form-checkboxes .checkbox.form-disabled label:before {
+  opacity: 0.4;
+}
 .node-type-webform.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "],
 .page-node-submission.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "],
 .node-type-webform.you-campaign .webform-client-form > div fieldset > .panel-body > .webform-component-markup[class*="-note "],

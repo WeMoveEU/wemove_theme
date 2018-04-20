@@ -96,7 +96,7 @@ function wmeu_preprocess_block(&$vars) {
 function wmeu_webform_element($variables) {
   $element = $variables['element'];
 
-  $output = '<div ala 1' . drupal_attributes($element['#wrapper_attributes']) . '>' . "\n";
+  $output = '<div ' . drupal_attributes($element['#wrapper_attributes']) . '>' . "\n";
   $prefix = isset($element['#field_prefix']) ? '<span class="field-prefix">' . webform_filter_xss($element['#field_prefix']) . '</span> ' : '';
   $suffix = isset($element['#field_suffix']) ? ' <span class="field-suffix">' . webform_filter_xss($element['#field_suffix']) . '</span>' : '';
 
