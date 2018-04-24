@@ -945,8 +945,9 @@ body.page-node-125 {
             }
 
             & > .webform-component-markup[class*="-note "] {
-                clear:none;
+                clear:both;
                 @media all and (min-width:@screen-sm) {
+                    clear:none;
                     position: absolute !important;
                     left:53%;
                     width:44%;
@@ -977,7 +978,9 @@ body.page-node-125 {
             .make-sm-column(12);
 
             .btn {
-                width: 25%;
+                @media all and (min-width:@screen-md) {
+                    width: 25%;
+                }
             }
 
             .btn.btn-success {
@@ -994,7 +997,7 @@ body.page-node-125 {
         }
 
         .help-block {
-            font-size:@font-size-small;
+            font-size:@font-size-small-2;
         }
 
         .box-metadata {
@@ -1013,6 +1016,11 @@ body.page-node-125 {
             .form-checkboxes .checkbox label {
                 cursor: not-allowed;
             }
+        }
+
+        //Description
+        .form-item .description {
+            font-size:@font-size-small-2;
         }
 
 
@@ -1080,7 +1088,7 @@ body.page-node-125 {
             -webkit-border-radius: 3px;
             border-radius: 3px;
 
-            font-size:@font-size-small;
+            font-size:@font-size-small-2;
 
             @media all and (min-width:@screen-sm) {
                 opacity:0;
@@ -1120,6 +1128,9 @@ body.page-node-125 {
 
         // - add image
         .webform-component.add-image {
+            float:left;
+            width: 100%;
+
             .webform-file-list {
                 margin: 0;
 
@@ -1134,6 +1145,9 @@ body.page-node-125 {
                     }
 
                     .upload-component {
+                        width:25%;
+                        text-align: right;
+
                         a {
                             &:extend(.btn all);
                             &:extend(.btn-sm all);
@@ -1172,6 +1186,11 @@ body.page-node-125 {
                     }
                 }
             }
+
+            .form-managed-file + .description {
+                float: left;
+                width: 75%;
+            }
         }
 
         // - campaign-title
@@ -1188,15 +1207,15 @@ body.page-node-125 {
         // - Language
         .webform-component.language {
             .form-radios {
-                display: table;
+                float: left;
                 width:100%;
 
                 .radio {
-                    display: table-cell;
+                    float: left;
                     border:1px solid @input-border;
                     background-color: #fff;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
+                    padding: 10px;
+                    margin-top: 0;
 
                     text-align: center;
 
@@ -1207,8 +1226,7 @@ body.page-node-125 {
                     &.active {
                         border-color: @text-color;
                         color: #fff;
-                        background:url("@{images-path}/ym_sprites.png") scroll no-repeat 0 -439px @text-color;
-                        padding-left: 27px;
+                        background-color: @text-color;
                     }
 
                     label {
@@ -1222,6 +1240,8 @@ body.page-node-125 {
 
                 @media all and (min-width:@screen-md) {
                     position: relative;
+                    float: none;
+                    display: table;
                     width: ~'calc(100% - 54px)';
                     margin-left: 54px;
 
@@ -1234,6 +1254,17 @@ body.page-node-125 {
                         width:50px;
                         display:block;
                         background:url("@{images-path}/ym_sprites.png") scroll no-repeat 0 5px;
+                    }
+
+                    .radio {
+                        display: table-cell;
+                        float:none;
+                        padding: 10px 0;
+
+                        &.active {
+                            background:url("@{images-path}/ym_sprites.png") scroll no-repeat 0 -439px @text-color;
+                            padding-left: 27px;
+                        }
                     }
                 }
             }

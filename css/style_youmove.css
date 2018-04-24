@@ -7323,11 +7323,12 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
 }
 .node-type-webform.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "],
 .page-node-submission.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "] {
-  clear: none;
+  clear: both;
 }
 @media all and (min-width: 768px) {
   .node-type-webform.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "],
   .page-node-submission.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "] {
+    clear: none;
     position: absolute !important;
     left: 53%;
     width: 44%;
@@ -7376,19 +7377,21 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
     width: 100%;
   }
 }
-.node-type-webform.you-campaign .webform-client-form .form-actions .btn,
-.page-node-submission.you-campaign .webform-client-form .form-actions .btn,
-.node-type-webform.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a,
-.page-node-submission.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a,
-.node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a,
-.page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a,
-.node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a,
-.page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a,
-.node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a,
-.page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a,
-.node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a,
-.page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a {
-  width: 25%;
+@media all and (min-width: 992px) {
+  .node-type-webform.you-campaign .webform-client-form .form-actions .btn,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .btn,
+  .node-type-webform.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a,
+  .page-node-submission.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a {
+    width: 25%;
+  }
 }
 .node-type-webform.you-campaign .webform-client-form .form-required,
 .page-node-submission.you-campaign .webform-client-form .form-required {
@@ -7396,7 +7399,7 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
 }
 .node-type-webform.you-campaign .webform-client-form .help-block,
 .page-node-submission.you-campaign .webform-client-form .help-block {
-  font-size: 11px;
+  font-size: 13px;
 }
 .node-type-webform.you-campaign .webform-client-form .box-metadata .panel-body,
 .page-node-submission.you-campaign .webform-client-form .box-metadata .panel-body {
@@ -7415,6 +7418,10 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
 .node-type-webform.you-campaign .webform-client-form .webform-component.form-disabled .form-checkboxes .checkbox label,
 .page-node-submission.you-campaign .webform-client-form .webform-component.form-disabled .form-checkboxes .checkbox label {
   cursor: not-allowed;
+}
+.node-type-webform.you-campaign .webform-client-form .form-item .description,
+.page-node-submission.you-campaign .webform-client-form .form-item .description {
+  font-size: 13px;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component.webform-component-textarea textarea,
 .page-node-submission.you-campaign .webform-client-form .webform-component.webform-component-textarea textarea {
@@ -7474,7 +7481,7 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
   background-color: #ffe48a;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  font-size: 11px;
+  font-size: 13px;
 }
 @media all and (min-width: 768px) {
   .node-type-webform.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "],
@@ -7524,6 +7531,11 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
 .page-node-submission.you-campaign .webform-client-form .webform-progressbar {
   display: none;
 }
+.node-type-webform.you-campaign .webform-client-form .webform-component.add-image,
+.page-node-submission.you-campaign .webform-client-form .webform-component.add-image {
+  float: left;
+  width: 100%;
+}
 .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list,
 .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list {
   margin: 0;
@@ -7538,6 +7550,11 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
 .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .uploaded-file {
   display: block;
   margin-bottom: 10px;
+}
+.node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component,
+.page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component {
+  width: 25%;
+  text-align: right;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a,
 .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a {
@@ -7573,6 +7590,11 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
 .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .field-widget-dragndrop-upload-file .droppable.disabled {
   display: none;
 }
+.node-type-webform.you-campaign .webform-client-form .webform-component.add-image .form-managed-file + .description,
+.page-node-submission.you-campaign .webform-client-form .webform-component.add-image .form-managed-file + .description {
+  float: left;
+  width: 75%;
+}
 .node-type-webform.you-campaign .webform-client-form .webform-component.campaign-title textarea,
 .page-node-submission.you-campaign .webform-client-form .webform-component.campaign-title textarea {
   padding: 10px;
@@ -7580,16 +7602,16 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component.language .form-radios,
 .page-node-submission.you-campaign .webform-client-form .webform-component.language .form-radios {
-  display: table;
+  float: left;
   width: 100%;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component.language .form-radios .radio,
 .page-node-submission.you-campaign .webform-client-form .webform-component.language .form-radios .radio {
-  display: table-cell;
+  float: left;
   border: 1px solid #cccccc;
   background-color: #fff;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
+  margin-top: 0;
   text-align: center;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component.language .form-radios .radio + .radio,
@@ -7600,8 +7622,7 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
 .page-node-submission.you-campaign .webform-client-form .webform-component.language .form-radios .radio.active {
   border-color: #000000;
   color: #fff;
-  background: url("../images/ym_sprites.png") scroll no-repeat 0 -439px #000000;
-  padding-left: 27px;
+  background-color: #000000;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component.language .form-radios .radio label,
 .page-node-submission.you-campaign .webform-client-form .webform-component.language .form-radios .radio label {
@@ -7622,6 +7643,8 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
   .node-type-webform.you-campaign .webform-client-form .webform-component.language .form-radios,
   .page-node-submission.you-campaign .webform-client-form .webform-component.language .form-radios {
     position: relative;
+    float: none;
+    display: table;
     width: calc(100% - 54px);
     margin-left: 54px;
   }
@@ -7635,6 +7658,17 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
     width: 50px;
     display: block;
     background: url("../images/ym_sprites.png") scroll no-repeat 0 5px;
+  }
+  .node-type-webform.you-campaign .webform-client-form .webform-component.language .form-radios .radio,
+  .page-node-submission.you-campaign .webform-client-form .webform-component.language .form-radios .radio {
+    display: table-cell;
+    float: none;
+    padding: 10px 0;
+  }
+  .node-type-webform.you-campaign .webform-client-form .webform-component.language .form-radios .radio.active,
+  .page-node-submission.you-campaign .webform-client-form .webform-component.language .form-radios .radio.active {
+    background: url("../images/ym_sprites.png") scroll no-repeat 0 -439px #000000;
+    padding-left: 27px;
   }
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component.twitter input,
