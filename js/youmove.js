@@ -108,5 +108,14 @@
    }
  }
 
+ Drupal.behaviors.youmove_campaign_form_remove_header_descr = {
+   attach: function(context) {
+       var indicator = $('body.you-campaign.logged-in form.webform-client-form input[value="Break 2"]');
+       if(indicator.length > 0){
+           $('#block-block-43 .descr-required').hide();
+       }
+   }
+ };
+
 
 })(jQuery, Drupal);

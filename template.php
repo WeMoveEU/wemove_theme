@@ -252,7 +252,8 @@ function _is_youmove_page() {
         arg(0) == 'node' && is_numeric(arg(1)) && in_array((int)arg(1),$ym_page_ids)
         ||
         //YouMove user role pages
-        arg(0) == 'user' && user_has_role(theme_get_setting('ym_campaigner_role_id'))
+        //arg(0) == 'user' && user_has_role(theme_get_setting('ym_campaigner_role_id'))
+        arg(0) == 'user'
         ||
         //YouMove ym_campaign_webform_id
         _is_youmove_campaign_page()

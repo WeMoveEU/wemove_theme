@@ -228,12 +228,16 @@ a.btn:hover,
         li {
             margin-bottom: 1rem;
         }
+
+        @media all and (max-width:@screen-md-max) and (min-width: @screen-sm) {
+            font-size: @font-size-base;
+        }
     }
 }
 
 // REGION - Navigation
 .region-navigation {
-    @media all and (max-width:(@screen-sm  - 1)) {
+    @media all and (max-width:@screen-xs-max) {
         clear:both;
     }
 }
@@ -259,6 +263,7 @@ a.btn:hover,
             }
         }
 }
+
 
 // BLOCK - Your campaigns
 #block-views-your-campaigns-block-wrapper {
@@ -1410,9 +1415,11 @@ body.page-node-125 {
             & > .panel-body {
                 .make-row();
 
-                & > .form-item,
-                & > fieldset.contact-organization {
+                & > .form-item {
                     .make-xs-column(6);
+                }
+                & > fieldset.contact-organization {
+                    .make-xs-column(12);
                 }
             }
 

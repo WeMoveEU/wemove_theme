@@ -21,6 +21,7 @@
             <li><a href="/you/create"><?php print t('START A CAMPAIGN'); ?></a></li>
             <li><a href="/civicrm/contribute/transact?reset=1&amp;id=1"><?php print t('DONATE'); ?></a></li>
             <?php if (user_is_logged_in()){ ?>
+                <li><a href="/your-campaigns"><?php print t('MY CAMPAIGNS'); ?></a></li>
                 <li><a href="/user/logout?destination=you"><?php print t('LOG-OUT'); ?></a></li>
             <?php } else { ?>
                 <li><a href="/user"><?php print t('LOG-IN'); ?></a></li>

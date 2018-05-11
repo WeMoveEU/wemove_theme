@@ -6671,6 +6671,11 @@ fieldset[disabled] .btn.page-node-submission.you-campaign .webform-client-form .
 header #main-menu li {
   margin-bottom: 1rem;
 }
+@media all and (max-width: 1199px) and (min-width: 768px) {
+  header #main-menu {
+    font-size: 14px;
+  }
+}
 @media all and (max-width: 767px) {
   .region-navigation {
     clear: both;
@@ -7822,12 +7827,19 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
   margin-right: -15px;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > .form-item,
-.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > .form-item,
+.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > .form-item {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > fieldset.contact-organization,
 .page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > fieldset.contact-organization {
   position: relative;
   float: left;
-  width: 50%;
+  width: 100%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
