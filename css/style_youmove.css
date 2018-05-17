@@ -6027,6 +6027,9 @@ img {
   padding-bottom: 0;
   border: none;
 }
+#block-menu-menu-main-menu-youmove {
+  display: none;
+}
 .h3 {
   font-size: 22px;
   font-weight: 700;
@@ -6697,6 +6700,19 @@ header #main-menu li {
 }
 #block-locale-language .dropdown-toggle .caret {
   margin-left: 5px;
+}
+@media all and (min-width: 768px) {
+  .region-navigation #block-locale-language {
+    float: right;
+  }
+}
+body.you-page #block-menu-menu-main-menu-youmove {
+  display: block;
+}
+@media all and (min-width: 768px) {
+  .region-navigation #block-menu-menu-main-menu-youmove {
+    float: right;
+  }
 }
 #block-views-your-campaigns-block-wrapper {
   position: fixed;

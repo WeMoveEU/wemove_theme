@@ -51,6 +51,7 @@ function wmeu_preprocess_page(&$vars) {
   }
 }
 
+
 function wmeu_menu_local_task($variables) {
 	$menu_item_options = db_query("SELECT options FROM {menu_links} WHERE link_path = :link_path", array(':link_path' => $variables['element']['#link']['path']))->fetchField();
 	if ($menu_item_options) {
@@ -58,6 +59,17 @@ function wmeu_menu_local_task($variables) {
 		$variables['element']['#link']['localized_options'] = $menu_item_options;
 	}
 	return theme_menu_local_task($variables);
+}
+
+
+function wmeu_menu_tree__menu_main_menu_youmove($variables){
+  return '<div class="collapse navbar-collapse" id="bs-navbar-collapse-1"> <ul class="nav navbar-nav" id="main-menu">' . $variables['tree'] . '</ul></div>';
+}
+
+function wmeu_translated_menu_link_alter(&$item, $map) {
+    if ($item['link_path'] == 'node/981') {
+        $item['access'] = (user_is_logged_in()) ? TRUE : FALSE;
+    }
 }
 
 function wmeu_preprocess_webform_submission(&$vars) {}
