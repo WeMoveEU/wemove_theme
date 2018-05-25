@@ -33,7 +33,7 @@
             var offsetTop = $(this).position().top;
             $(this).next(tooltipSelector).css('top',offsetTop);
 
-            $(this).find('textarea,input[type="text"],input[type="checkbox"],input[type="radio"]').focus(function(){
+            $(this).find('textarea,input[type="text"],input[type="email"],input[type="checkbox"],input[type="radio"]').focus(function(){
                 $(tooltipSelector).removeClass(tooltipActiveClass);
                 $(this).closest('.webform-component').next(tooltipSelector).addClass(tooltipActiveClass);
             }).focusout(function(){});
