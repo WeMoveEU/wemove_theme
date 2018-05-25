@@ -315,7 +315,7 @@ function wmeu_status_messages($variables){
     'error' => t('Error message'),
     'warning' => t('Warning message'),
   );
-watchdog('TEST0', 'qqqq');
+
   foreach (drupal_get_messages($display) as $type => $messages) {
     $output .= "<div class=\"messages $type\">\n";
     if (!empty($status_heading[$type])) {
@@ -326,14 +326,12 @@ watchdog('TEST0', 'qqqq');
       $output .= " <ul>\n";
       foreach ($messages as $message) {
           $new_message = _override_messages($message);
-          watchdog('my1',$new_message);
           $output .= '  <li>' . $new_message . "</li>\n";
       }
       $output .= " </ul>\n";
     }
     else {
       $new_messages = _override_messages(reset($messages));
-      watchdog('my2',$new_messages);
       $output .= $new_messages;
   }
     $output .= "</div>\n";
@@ -342,12 +340,14 @@ watchdog('TEST0', 'qqqq');
 }
 
 function _override_messages($msg) {
-    
+
     if($msg == t('Further instructions have been sent to your e-mail address.')) {
         global $user;
-        if($user) {
-            $user_mail = $user->mail;
-            return t('Instructions to reset your password will be emailed to %email. You must log-out to use the password reset link in the e-mail.', array('%email' => $user_mail));
+
+        if($user && $user->mail) {
+            return t('Instructions to reset your password will be emailed to %email. You must log-out to use the password reset link in the e-mail.', array('%email' => $user->mail));
+        } else {
+            return t('Instructions to reset your password will be emailed to you. You must log-out to use the password reset link in the e-mail.');
         }
     }
     return $msg;

@@ -224,12 +224,15 @@ a.btn:hover,
 
 
 // MENU - Main
+header .block-menu .navbar-collapse {
+    padding: 0;
+}
+
 #main-menu {
     header & {
         li {
             margin-bottom: 1rem;
         }
-
         @media all and (max-width:@screen-md-max) and (min-width: @screen-sm) {
             font-size: @font-size-base;
         }
@@ -238,6 +241,9 @@ a.btn:hover,
 
 // REGION - Navigation
 .region-navigation {
+    @media all and (min-width: @screen-sm) {
+        float: right;
+    }
     @media all and (max-width:@screen-xs-max) {
         clear:both;
     }
@@ -775,6 +781,16 @@ body.page-node-125 {
                     margin-top: floor(@grid-gutter-width / 2);
                 }
             }
+        }
+    }
+}
+
+
+// PAGE - Password recovery
+body.page-user-reset.not-logged-in {
+    form#user-pass-reset {
+        & > div > p + p {
+            display: none;
         }
     }
 }
@@ -1447,6 +1463,10 @@ body.page-node-125 {
             .form-item {
                 label {
                     color:#fff;
+
+                    .form-required {
+                        color:#fff;
+                    }
                 }
                 input[type="text"],
                 input[type="email"],

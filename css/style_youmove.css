@@ -6671,12 +6671,20 @@ fieldset[disabled] .btn.page-node-submission.you-campaign .webform-client-form .
   box-shadow: 0 0 0px 2px #ffdada;
   border-color: #da0000;
 }
+header .block-menu .navbar-collapse {
+  padding: 0;
+}
 header #main-menu li {
   margin-bottom: 1rem;
 }
 @media all and (max-width: 1199px) and (min-width: 768px) {
   header #main-menu {
     font-size: 14px;
+  }
+}
+@media all and (min-width: 768px) {
+  .region-navigation {
+    float: right;
   }
 }
 @media all and (max-width: 767px) {
@@ -7151,6 +7159,9 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
 }
 .page-user-edit .region-content #user-profile-form .form-item-pass .progress {
   margin-top: 15px;
+}
+body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
+  display: none;
 }
 .node-type-webform.you-campaign h1.page-header,
 .page-node-submission.you-campaign h1.page-header {
@@ -7862,6 +7873,10 @@ body.page-node-125 .region-content .node .views-bootstrap-grid-plugin-style .col
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact .form-item label,
 .page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact .form-item label {
+  color: #fff;
+}
+.node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact .form-item label .form-required,
+.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact .form-item label .form-required {
   color: #fff;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact .form-item input[type="text"],
