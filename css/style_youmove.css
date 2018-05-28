@@ -6846,6 +6846,21 @@ body.you-page #block-menu-menu-main-menu-youmove {
   -webkit-font-smoothing: antialiased;
   font-size: 12px;
 }
+.i18n-pl #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission {
+  width: 90px;
+}
+.i18n-it #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission {
+  width: 105px;
+}
+.i18n-fr #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission {
+  width: 105px;
+}
+.i18n-es #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission {
+  width: 90px;
+}
+.i18n-de #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission {
+  width: 120px;
+}
 #block-views-your-campaigns-block-1 .views-table .views-field-data {
   width: 120px;
 }
@@ -6853,7 +6868,7 @@ body.you-page #block-menu-menu-main-menu-youmove {
   margin-right: 10px;
 }
 #block-views-your-campaigns-block-1 .views-table .views-field-data-1 {
-  width: 100px;
+  width: 120px;
 }
 body.page-node-125 h3,
 body.page-node-125 .h3,
@@ -7659,6 +7674,7 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
 .node-type-webform.you-campaign .webform-client-form .webform-component.language .form-radios .radio label,
 .page-node-submission.you-campaign .webform-client-form .webform-component.language .form-radios .radio label {
   padding-left: 0;
+  line-height: 20px;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component.language .form-radios .radio input[type="radio"],
 .page-node-submission.you-campaign .webform-client-form .webform-component.language .form-radios .radio input[type="radio"] {
@@ -7696,11 +7712,7 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
     display: table-cell;
     float: none;
     padding: 10px 0;
-  }
-  .node-type-webform.you-campaign .webform-client-form .webform-component.language .form-radios .radio.active,
-  .page-node-submission.you-campaign .webform-client-form .webform-component.language .form-radios .radio.active {
-    background: url("../images/ym_sprites.png") scroll no-repeat 0 -439px #000000;
-    padding-left: 27px;
+    font-size: 11px;
   }
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component.twitter input,

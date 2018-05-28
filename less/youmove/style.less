@@ -436,6 +436,12 @@ header .block-menu .navbar-collapse {
                     font-size: 12px;
                 }
             }
+
+            .i18n-pl & {width: 90px;}
+            .i18n-it & {width: 105px;}
+            .i18n-fr & {width: 105px;}
+            .i18n-es & {width: 90px;}
+            .i18n-de & {width: 120px;}
         }
 
         .views-field-data {
@@ -446,7 +452,7 @@ header .block-menu .navbar-collapse {
         }
 
         .views-field-data-1 {
-            width: 100px;
+            width: 120px;
         }
 
     }
@@ -1273,6 +1279,7 @@ body.page-user-reset.not-logged-in {
 
                     label {
                         padding-left: 0;
+                        line-height: 20px;
                     }
 
                     input[type="radio"] {
@@ -1303,10 +1310,12 @@ body.page-user-reset.not-logged-in {
                         float:none;
                         padding: 10px 0;
 
-                        &.active {
-                            background:url("@{images-path}/ym_sprites.png") scroll no-repeat 0 -439px @text-color;
-                            padding-left: 27px;
-                        }
+                        font-size: @font-size-small;
+
+                        //&.active {
+                        //    background:url("@{images-path}/ym_sprites.png") scroll no-repeat 0 -439px @text-color;
+                        //    padding-left: 27px;
+                        //}
                     }
                 }
             }
