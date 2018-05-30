@@ -2635,18 +2635,30 @@ fieldset[disabled] .page-node-submission.you-campaign .webform-client-form .webf
 .btn-success,
 .node-type-webform.you-campaign .webform-client-form .form-actions .btn.btn-success,
 .page-node-submission.you-campaign .webform-client-form .form-actions .btn.btn-success,
+.node-type-webform.you-campaign .webform-client-form .form-actions .btn.webform-submit.button-primary,
+.page-node-submission.you-campaign .webform-client-form .form-actions .btn.webform-submit.button-primary,
 .node-type-webform.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.btn-success,
 .page-node-submission.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.btn-success,
+.node-type-webform.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.webform-submit.button-primary,
+.page-node-submission.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.webform-submit.button-primary,
 .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.btn-success,
 .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.btn-success,
+.node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.webform-submit.button-primary,
+.page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.webform-submit.button-primary,
 .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.btn-success,
 .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.btn-success,
+.node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.webform-submit.button-primary,
+.page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.webform-submit.button-primary,
 .page-node-submission.you-campaign .webform-client-form .form-actions .btn.node-type-webform.you-campaign .webform-client-form .form-actions .btn.btn-success,
 .node-type-webform.you-campaign .webform-client-form .form-actions .btn.page-node-submission.you-campaign .webform-client-form .form-actions .btn.btn-success,
 .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.btn-success,
 .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.btn-success,
+.node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-submit.button-primary,
+.page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-submit.button-primary,
 .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.btn-success,
 .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.btn-success,
+.node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-submit.button-primary,
+.page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-submit.button-primary,
 .page-node-submission.you-campaign .webform-client-form .form-actions .btn.node-type-webform.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.btn-success,
 .node-type-webform.you-campaign .webform-client-form .form-actions .btn.page-node-submission.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.btn-success,
 .page-node-submission.you-campaign .webform-client-form .form-actions .btn.node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.btn-success,
@@ -7928,6 +7940,32 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
 .page-node-submission.you-campaign .webform-client-form .webform-component-markup.webform-component--submit-annotation {
   font-size: 11px;
   font-weight: bold;
+}
+.node-type-webform.you-campaign1:not(.i18n-en) .form-actions .btn.webform-submit.button-primary,
+.node-type-webform.you-campaign1:not(.i18n-en) .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.webform-submit.button-primary,
+.node-type-webform.you-campaign1:not(.i18n-en) .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.webform-submit.button-primary,
+.node-type-webform.you-campaign1:not(.i18n-en) .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.webform-submit.button-primary,
+.node-type-webform.you-campaign1:not(.i18n-en) .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-submit.button-primary,
+.node-type-webform.you-campaign1:not(.i18n-en) .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-submit.button-primary {
+  position: relative;
+}
+.node-type-webform.you-campaign1:not(.i18n-en) .form-actions .btn.webform-submit.button-primary:before,
+.node-type-webform.you-campaign1:not(.i18n-en) .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.webform-submit.button-primary:before,
+.node-type-webform.you-campaign1:not(.i18n-en) .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.webform-submit.button-primary:before,
+.node-type-webform.you-campaign1:not(.i18n-en) .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.webform-submit.button-primary:before,
+.node-type-webform.you-campaign1:not(.i18n-en) .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-submit.button-primary:before,
+.node-type-webform.you-campaign1:not(.i18n-en) .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-submit.button-primary:before {
+  position: absolute;
+  top: 1px;
+  display: inline-block;
+  margin-left: -30px;
+  margin-top: 8px;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: "\e013";
 }
 .page-node-submission.page-node-submission-edit .webform-submission .webform-client-form .webform-component-fieldset.contact {
   display: none;

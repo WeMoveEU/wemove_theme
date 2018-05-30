@@ -1020,7 +1020,7 @@ body.page-user-reset.not-logged-in {
             }
         }
 
-        // Controls
+        // Buttons
         .form-actions {
             clear: both;
             .make-sm-column(12);
@@ -1033,6 +1033,9 @@ body.page-user-reset.not-logged-in {
 
             .btn.btn-success {
                 &:extend(.btn-success all);
+            }
+            .btn.webform-submit.button-primary {
+                &:extend(.btn-success);
             }
             .btn.webform-next,
             .btn.webform-previous {
@@ -1516,6 +1519,32 @@ body.page-user-reset.not-logged-in {
             font-weight: bold;
         }
     }
+}
+
+// CAMPAIGN Submission - FORM - other language
+.node-type-webform.you-campaign1:not(.i18n-en) {
+
+    // Buttons
+    .form-actions {
+        .btn.webform-submit.button-primary {
+                position: relative;
+
+                &:before {
+                    position: absolute;
+                    top: 1px;
+                    display: inline-block;
+                    margin-left: -30px;
+                    margin-top: 8px;
+
+                    font-family: 'Glyphicons Halflings';
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+                    content: "\e013";
+                }
+            }
+        }
 }
 
 // CAMPAIGN  Submission - EDIT

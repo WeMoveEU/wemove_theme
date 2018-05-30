@@ -253,9 +253,29 @@ function wmeu_form_alter(&$form, &$form_state, $form_id) {
           $form['account']['pass']['#description'] = t('To change your password, enter the new password in both fields.');
       }
   }*/
+
+    if($form_id === 'webform_client_form_580') {
+        $form['#after_build'][] = '_webform_dragndrop_text_override';
+    }
   }
 
 
+function _webform_dragndrop_text_override($form, $form_state) {
+    foreach($form['#node']->webform['components'] as $component) {
+        if ($component['type'] == 'dragndrop') {
+          $upload_text = variable_get('webform_dragndrop_upload_text', 'or drag and drop a file here');
+          $upload_text_translated = t($upload_text);
+
+          $js_setting = array(
+            'dndText' => $upload_text_translated,
+          );
+
+          drupal_add_js($js_setting, 'setting');
+          break;
+        }
+      }
+      return $form;
+}
 
 function _is_youmove_page() {
     $ym_page_ids = explode(',',theme_get_setting('ym_page_ids'));
