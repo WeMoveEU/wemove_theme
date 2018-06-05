@@ -7868,6 +7868,14 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
 .page-node-submission.you-campaign .webform-client-form .webform-component.who-am-i.form-disabled .radio.active label {
   opacity: 0.9;
 }
+.node-type-webform.you-campaign .webform-client-form .webform-component--user-form,
+.page-node-submission.you-campaign .webform-client-form .webform-component--user-form {
+  margin-bottom: 0;
+}
+.node-type-webform.you-campaign .webform-client-form .webform-component--user-form > .panel-body,
+.page-node-submission.you-campaign .webform-client-form .webform-component--user-form > .panel-body {
+  padding: 0;
+}
 .node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact,
 .page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact {
   background-color: #cf0404;
@@ -7878,19 +7886,12 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
   margin-right: -15px;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > .form-item,
-.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > .form-item {
+.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > .form-item,
+.node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > .webform-component-fieldset,
+.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > .webform-component-fieldset {
   position: relative;
   float: left;
   width: 50%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > fieldset.contact-organization,
-.page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact > .panel-body > fieldset.contact-organization {
-  position: relative;
-  float: left;
-  width: 100%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;

@@ -1457,6 +1457,15 @@ body.page-user-reset.not-logged-in {
             }
         }
 
+        // User form - wrapper
+        .webform-component--user-form {
+            margin-bottom: 0;
+
+            & > .panel-body {
+                padding: 0;
+            }
+        }
+
         // Custom - Profile block
         .webform-component-fieldset.contact {
             background-color: @brand-primary;
@@ -1464,11 +1473,9 @@ body.page-user-reset.not-logged-in {
             & > .panel-body {
                 .make-row();
 
-                & > .form-item {
+                & > .form-item,
+                & > .webform-component-fieldset {
                     .make-xs-column(6);
-                }
-                & > fieldset.contact-organization {
-                    .make-xs-column(12);
                 }
             }
 
