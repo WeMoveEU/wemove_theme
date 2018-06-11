@@ -70,17 +70,13 @@
 </div>
 
 <div id="footer" style="background: #EDEDED;">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="col-sm-3">
-        <div style="padding: 20px 0">
+      <div class="col-sm-3" id="logo">
           <img src="<?php print $youmove_url;?>/images/wemove/logo.png" style="width: 190px">
-        </div>
       </div>
-      <div class="col-sm-9">
-        <div class="row" style="margin-top: 20px">
+      <div class="col-sm-9" id="footer-description">
           <p id="disclaimer"><?php print t('Petitions on you.wemove.eu are started and run by civil society groups and members of the public. WeMove.EU hosts these petitions and they are in line with our values but they are not necessarily endorsed by WeMove.EU.'); ?></p>
-        </div>
       </div>
     </div>
   </div>

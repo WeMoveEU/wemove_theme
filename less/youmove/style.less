@@ -222,6 +222,19 @@ a.btn:hover,
 }
 
 
+// FOOTER
+#footer {
+    .container {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    @media all and (max-width: @screen-xs-max) {
+        margin-bottom: 0;
+    }
+}
+
+
 
 // MENU - Main
 header .block-menu .navbar-collapse {
@@ -403,7 +416,10 @@ header .block-menu .navbar-collapse {
     }
 
     .views-table {
-        table-layout: fixed;
+
+        & > tbody > tr > td {
+            white-space: normal;
+        }
 
         td .btn-sm {
             height: 30px;
@@ -457,6 +473,13 @@ header .block-menu .navbar-collapse {
 
     }
 }
+
+
+// BLOK - Campaign's header
+#block-block-43 {
+    margin-bottom: floor(@grid-gutter-width/2);
+}
+
 
 // PAGE - Your campaign starts here
 body.page-node-125 {
@@ -550,7 +573,6 @@ body.page-node-125 {
                               border-top:15px solid transparent;
                               border-bottom:15px solid transparent;
                       }
-
                 }
                 .bubbles {
                       width:196px;
@@ -618,6 +640,18 @@ body.page-node-125 {
                                  border-bottom:20px solid transparent;
                             }
                        }
+                }
+
+                @media all and (max-width:@screen-xs-min) {
+                    padding-right: 60px;
+
+                    .text {
+                          font-size: @font-size-h3;
+
+                          &:after {
+                              top:-5px;
+                          }
+                    }
                 }
         }
 
@@ -724,6 +758,17 @@ body.page-node-125 {
     }
 }
 
+//PAGE - My Campaign
+.page-node-981{
+    @media all and (max-width:@screen-xs-min) {
+        .node {
+            .field-name-body .btn-lg {
+                width: 100%;
+                margin-bottom: floor(@grid-gutter-width / 4);
+            }
+        }
+    }
+}
 
 //Page - User Profile
 .page-user-edit {
@@ -1172,6 +1217,12 @@ body.page-user-reset.not-logged-in {
             }
         }
 
+        & > div  fieldset > .panel-body > .webform-component-markup[class*="-note "] {
+            margin-left:0;
+            margin-right:0;
+        }
+
+
         // - Progress bar
         .webform-progressbar {
             display:none;
@@ -1475,11 +1526,20 @@ body.page-user-reset.not-logged-in {
 
                 & > .form-item,
                 & > .webform-component-fieldset {
-                    .make-xs-column(6);
+                    .make-sm-column(6);
+                }
+
+                & >  .webform-component-markup[class*="-note "] {
+                    position: static;
+                    margin-left: floor(@grid-gutter-width / 2);
+                    margin-right: floor(@grid-gutter-width / 2);
                 }
             }
 
             .form-item {
+                &.clear-float {
+                    clear:both;
+                }
                 label {
                     color:#fff;
 
@@ -1513,17 +1573,59 @@ body.page-user-reset.not-logged-in {
                     }
                 }
             }
-        }
 
-        //Custom - Login block
-        fieldset.webform-component--user-form--login-form {
-            background-color: @brand-primary-light;
-        }
+            .webform-component--user-form--civicrm-1-contact-1-fieldset-fieldset--password {
+                label {
+                    @media all and (min-width:@screen-sm) {
+                        .i18n-de& {margin-bottom: 25px;}
+                        .i18n-es& {margin-bottom: 25px;}
+                        .i18n-fr& {margin-bottom: 25px;}
+                        .i18n-it& {margin-bottom: 25px;}
+                    }
+                    @media all and (min-width:@screen-md) {
+                        .i18n-de& {margin-bottom: @padding-xs-horizontal;}
+                        .i18n-es& {margin-bottom: @padding-xs-horizontal;}
+                        .i18n-fr& {margin-bottom: @padding-xs-horizontal;}
+                        .i18n-it& {margin-bottom: @padding-xs-horizontal;}
+                    }
+                }
+            }
 
-        //Custom - Annotation Field
-        .webform-component-markup.webform-component--submit-annotation {
-            font-size:@font-size-small;
-            font-weight: bold;
+            .webform-component--user-form--civicrm-1-contact-1-fieldset-fieldset--civicrm-1-contact-1-address-country-id {
+                label {
+                    @media all and (min-width:@screen-sm) {
+                        .i18n-en& {margin-bottom: 25px;}
+                        .i18n-pl& {margin-bottom: 25px;}
+                        .i18n-de& {margin-bottom: 45px;}
+                        .i18n-es& {margin-bottom: 45px;}
+                        .i18n-fr& {margin-bottom: 45px;}
+                        .i18n-it& {margin-bottom: 45px;}
+                    }
+                    @media all and (min-width:@screen-md) {
+                        .i18n-de& {margin-bottom: 25px;}
+                        .i18n-es& {margin-bottom: 25px;}
+                        .i18n-fr& {margin-bottom: 25px;}
+                        .i18n-it& {margin-bottom: 25px;}
+                    }
+                    @media all and (min-width:@screen-lg) {
+                        .i18n-pl& {margin-bottom: @padding-xs-horizontal;}
+                        .i18n-en& {margin-bottom: @padding-xs-horizontal;}
+                    }
+
+                }
+            }
+
+
+            //Custom - Login block
+            fieldset.webform-component--user-form--login-form {
+                background-color: @brand-primary-light;
+            }
+
+            //Custom - Annotation Field
+            .webform-component-markup.webform-component--submit-annotation {
+                font-size:@font-size-small;
+                font-weight: bold;
+            }
         }
     }
 }
@@ -1549,6 +1651,20 @@ body.page-user-reset.not-logged-in {
                     line-height: 1;
                     -webkit-font-smoothing: antialiased;
                     content: "\e013";
+                }
+            }
+
+            @media all and (max-width:@screen-xs-max) {
+                overflow: hidden;
+
+                .btn.webform-previous,
+                .btn.webform-next {
+                    width: 47%;
+                    float:left;
+                }
+
+                .btn.webform-next {
+                    float:right;
                 }
             }
         }

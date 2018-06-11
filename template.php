@@ -265,9 +265,11 @@ function _webform_dragndrop_text_override($form, $form_state) {
         if ($component['type'] == 'dragndrop') {
           $upload_text = variable_get('webform_dragndrop_upload_text', 'or drag and drop a file here');
           $upload_text_translated = t($upload_text);
+          $remove_text_translated = t('Remove');
 
           $js_setting = array(
             'dndText' => $upload_text_translated,
+            'removeText' => $remove_text_translated,
           );
 
           drupal_add_js($js_setting, 'setting');
