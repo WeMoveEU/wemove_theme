@@ -502,14 +502,17 @@ body.page-node-125 {
     .region-content .node {
         position: relative;
 
-       #join-counter + .title {
+        .h0 + .title {
            position:relative;
            padding: 49px 0 57px 43px;
 
            @media all and (min-width:@screen-sm) {
                margin-bottom: 40px;
                position:absolute;
-               top:-15px;
+               top:-31px;
+               right:-10px;
+           }
+           @media all and (min-width:@screen-md) {
                right:43px;
            }
 
@@ -1068,11 +1071,31 @@ body.page-user-reset.not-logged-in {
         // Buttons
         .form-actions {
             clear: both;
+            overflow: hidden;
             .make-sm-column(12);
 
             .btn {
                 @media all and (min-width:@screen-md) {
                     width: 25%;
+                }
+                @media all and (max-width:@screen-xs-max) {
+                    & {
+                        margin-bottom: 10px;
+                    }
+                    &.webform-previous,
+                    &.webform-next {
+                        width: 49%;
+                        float:left;
+                    }
+                    &.webform-next {
+                        float:right;
+                    }
+                    &#edit-cancel {
+                        width: 100%;
+                    }
+                    &.webform-submit.button-primary {
+                        width: 100%;
+                    }
                 }
             }
 
@@ -1258,6 +1281,11 @@ body.page-user-reset.not-logged-in {
                             font-style: normal;
 
                             &.view-link {display: none;}
+
+                            @media all and (max-width:@screen-xs-max) {
+                                padding-left: 5px;
+                                padding-right: 5px;
+                            }
                         }
                     }
                 }
@@ -1509,12 +1537,17 @@ body.page-user-reset.not-logged-in {
         }
 
         // User form - wrapper
-        .webform-component--user-form {
+        .webform-component--user-form.form-wrapper {
             margin-bottom: 0;
 
             & > .panel-body {
                 padding: 0;
             }
+        }
+
+        //Custom - User login block
+        .webform-component--user-form--login-form {
+            background-color: @brand-primary-light;
         }
 
         // Custom - Profile block
@@ -1651,20 +1684,6 @@ body.page-user-reset.not-logged-in {
                     line-height: 1;
                     -webkit-font-smoothing: antialiased;
                     content: "\e013";
-                }
-            }
-
-            @media all and (max-width:@screen-xs-max) {
-                overflow: hidden;
-
-                .btn.webform-previous,
-                .btn.webform-next {
-                    width: 47%;
-                    float:left;
-                }
-
-                .btn.webform-next {
-                    float:right;
                 }
             }
         }

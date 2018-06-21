@@ -118,4 +118,22 @@
  };
 
 
+ Drupal.behaviors.youmove_campaign_form_submit_on_enter = {
+   attach: function(context) {
+       var parent = $('#webform-client-form-580 .webform-component--user-form');
+       var indicator = $('input#edit-submitted-user-form-login-form-login,' 
+                       + 'input#edit-submitted-user-form-login-form-login-password,'
+                       + 'input#edit-submitted-user-form-civicrm-1-contact-1-fieldset-fieldset-repassword' ,parent);
+      indicator.each(function(){
+          $(this).on("keypress", function (e) {
+            if (e.keyCode === 13) {
+                e.preventDefault();
+                $('.webform-client-form-580 .btn.webform-submit.button-primary').click();
+            }
+        });
+      });
+   }
+ };
+
+
 })(jQuery, Drupal);

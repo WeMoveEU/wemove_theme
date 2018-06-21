@@ -5,7 +5,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header pull-left">
-      <a class="navbar-brand" href="/">
+      <a class="navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('You home page'); ?>">
           <img src="<?php print $youmove_url;?>/images/wemove/logo.png">
       </a>
     </div>

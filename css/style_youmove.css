@@ -6911,19 +6911,24 @@ body.page-node-125 .color-text {
 body.page-node-125 .region-content .node {
   position: relative;
 }
-body.page-node-125 .region-content .node #join-counter + .title {
+body.page-node-125 .region-content .node .h0 + .title {
   position: relative;
   padding: 49px 0 57px 43px;
 }
 @media all and (min-width: 768px) {
-  body.page-node-125 .region-content .node #join-counter + .title {
+  body.page-node-125 .region-content .node .h0 + .title {
     margin-bottom: 40px;
     position: absolute;
-    top: -15px;
+    top: -31px;
+    right: -10px;
+  }
+}
+@media all and (min-width: 992px) {
+  body.page-node-125 .region-content .node .h0 + .title {
     right: 43px;
   }
 }
-body.page-node-125 .region-content .node #join-counter + .title .bubble {
+body.page-node-125 .region-content .node .h0 + .title .bubble {
   display: block;
   position: absolute;
   height: 160px;
@@ -6934,7 +6939,7 @@ body.page-node-125 .region-content .node #join-counter + .title .bubble {
   border-radius: 130px / 80px;
   z-index: -1;
 }
-body.page-node-125 .region-content .node #join-counter + .title .bubble:before {
+body.page-node-125 .region-content .node .h0 + .title .bubble:before {
   content: '';
   display: block;
   position: absolute;
@@ -7453,6 +7458,7 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
 .node-type-webform.you-campaign .webform-client-form .form-actions,
 .page-node-submission.you-campaign .webform-client-form .form-actions {
   clear: both;
+  overflow: hidden;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -7479,6 +7485,91 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
   .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a,
   .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a {
     width: 25%;
+  }
+}
+@media all and (max-width: 767px) {
+  .node-type-webform.you-campaign .webform-client-form .form-actions .btn,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .btn,
+  .node-type-webform.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a,
+  .page-node-submission.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a {
+    margin-bottom: 10px;
+  }
+  .node-type-webform.you-campaign .webform-client-form .form-actions .btn.webform-previous,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .btn.webform-previous,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .btn.webform-next,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .btn.webform-next,
+  .node-type-webform.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.webform-previous,
+  .page-node-submission.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.webform-previous,
+  .node-type-webform.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.webform-next,
+  .page-node-submission.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.webform-next,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.webform-previous,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.webform-previous,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.webform-next,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.webform-next,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.webform-previous,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.webform-previous,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.webform-next,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.webform-next,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-previous,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-previous,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-next,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-next,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-previous,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-previous,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-next,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-next {
+    width: 49%;
+    float: left;
+  }
+  .node-type-webform.you-campaign .webform-client-form .form-actions .btn.webform-next,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .btn.webform-next,
+  .node-type-webform.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.webform-next,
+  .page-node-submission.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.webform-next,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.webform-next,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.webform-next,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.webform-next,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.webform-next,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-next,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-next,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-next,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-next {
+    float: right;
+  }
+  .node-type-webform.you-campaign .webform-client-form .form-actions .btn#edit-cancel,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .btn#edit-cancel,
+  .node-type-webform.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a#edit-cancel,
+  .page-node-submission.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a#edit-cancel,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a#edit-cancel,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a#edit-cancel,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a#edit-cancel,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a#edit-cancel,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a#edit-cancel,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a#edit-cancel,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a#edit-cancel,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a#edit-cancel {
+    width: 100%;
+  }
+  .node-type-webform.you-campaign .webform-client-form .form-actions .btn.webform-submit.button-primary,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .btn.webform-submit.button-primary,
+  .node-type-webform.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.webform-submit.button-primary,
+  .page-node-submission.you-campaign .webform-client-form .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.webform-submit.button-primary,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.webform-submit.button-primary,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.webform-submit.button-primary,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.webform-submit.button-primary,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.webform-submit.button-primary,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-submit.button-primary,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-submit.button-primary,
+  .node-type-webform.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-submit.button-primary,
+  .page-node-submission.you-campaign .webform-client-form .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-submit.button-primary {
+    width: 100%;
   }
 }
 .node-type-webform.you-campaign .webform-client-form .form-required,
@@ -7657,6 +7748,13 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
 .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.view-link,
 .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.view-link {
   display: none;
+}
+@media all and (max-width: 767px) {
+  .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a,
+  .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .field-widget-dragndrop-upload-file .droppable,
 .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .field-widget-dragndrop-upload-file .droppable {
@@ -7902,13 +8000,17 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
 .page-node-submission.you-campaign .webform-client-form .webform-component.who-am-i.form-disabled .radio.active label {
   opacity: 0.9;
 }
-.node-type-webform.you-campaign .webform-client-form .webform-component--user-form,
-.page-node-submission.you-campaign .webform-client-form .webform-component--user-form {
+.node-type-webform.you-campaign .webform-client-form .webform-component--user-form.form-wrapper,
+.page-node-submission.you-campaign .webform-client-form .webform-component--user-form.form-wrapper {
   margin-bottom: 0;
 }
-.node-type-webform.you-campaign .webform-client-form .webform-component--user-form > .panel-body,
-.page-node-submission.you-campaign .webform-client-form .webform-component--user-form > .panel-body {
+.node-type-webform.you-campaign .webform-client-form .webform-component--user-form.form-wrapper > .panel-body,
+.page-node-submission.you-campaign .webform-client-form .webform-component--user-form.form-wrapper > .panel-body {
   padding: 0;
+}
+.node-type-webform.you-campaign .webform-client-form .webform-component--user-form--login-form,
+.page-node-submission.you-campaign .webform-client-form .webform-component--user-form--login-form {
+  background-color: #fbe3e4;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-component-fieldset.contact,
 .page-node-submission.you-campaign .webform-client-form .webform-component-fieldset.contact {
@@ -8108,34 +8210,6 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   content: "\e013";
-}
-@media all and (max-width: 767px) {
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions {
-    overflow: hidden;
-  }
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions .btn.webform-previous,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions .btn.webform-next,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.webform-previous,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.webform-next,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.webform-previous,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.webform-next,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.webform-previous,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.webform-next,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-previous,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-next,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-previous,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-next {
-    width: 47%;
-    float: left;
-  }
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions .btn.webform-next,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions #block-views-your-campaigns-block-1 .views-table .views-field-edit-submission a.webform-next,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions .node-type-webform.you-campaign ul.tabs--primary > li > a.webform-next,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions .page-node-submission.you-campaign ul.tabs--primary > li > a.webform-next,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions .node-type-webform.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-next,
-  .node-type-webform.you-campaign1:not(.i18n-en) .form-actions .page-node-submission.you-campaign .webform-client-form .webform-component.add-image .webform-file-list ul li .upload-component a.webform-next {
-    float: right;
-  }
 }
 .page-node-submission.page-node-submission-edit .webform-submission .webform-client-form .webform-component-fieldset.contact {
   display: none;
