@@ -1340,6 +1340,20 @@ body.page-user-reset.not-logged-in {
 
         // - This is translation
         .webform-component.webform-component-select.webform-component--other-data--parent-campaign-id {
+                select {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    overflow: hidden !important;
+                    text-overflow: ellipsis !important;
+                    word-wrap: break-word !important;
+
+                    option {
+                        max-width: 100% !important;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+
             &.webform-container-inline {
                 @media all and (min-width:@screen-lg) {
                     & > label {

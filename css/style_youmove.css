@@ -7796,6 +7796,20 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
   padding: 10px;
   margin: 0;
 }
+.node-type-webform.you-campaign .webform-client-form .webform-component.webform-component-select.webform-component--other-data--parent-campaign-id select,
+.page-node-submission.you-campaign .webform-client-form .webform-component.webform-component-select.webform-component--other-data--parent-campaign-id select {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  word-wrap: break-word !important;
+}
+.node-type-webform.you-campaign .webform-client-form .webform-component.webform-component-select.webform-component--other-data--parent-campaign-id select option,
+.page-node-submission.you-campaign .webform-client-form .webform-component.webform-component-select.webform-component--other-data--parent-campaign-id select option {
+  max-width: 100% !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 @media all and (min-width: 1200px) {
   .node-type-webform.you-campaign .webform-client-form .webform-component.webform-component-select.webform-component--other-data--parent-campaign-id.webform-container-inline > label,
   .page-node-submission.you-campaign .webform-client-form .webform-component.webform-component-select.webform-component--other-data--parent-campaign-id.webform-container-inline > label {
