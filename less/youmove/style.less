@@ -1145,6 +1145,7 @@ body.page-user-reset.not-logged-in {
         //Description
         .form-item .description {
             font-size:@font-size-small-2;
+            margin-top: floor(@grid-gutter-width / 3);
         }
 
 
@@ -1160,9 +1161,9 @@ body.page-user-reset.not-logged-in {
 
                     label {
                         position: relative;
-                        min-height: 40px;
+                        min-height: 34px;
                         padding-left: 54px;
-                        padding-top: 10px;
+                        padding-top: 8px;
 
                         font-weight: bold;
 
@@ -1172,8 +1173,8 @@ body.page-user-reset.not-logged-in {
                             top:0;
                             left:0;
                             display: block;
-                            width:40px;
-                            height:40px;
+                            width:34px;
+                            height:34px;
                             background-color: #fff;
                             border:1px solid @input-border;
                         }
@@ -1184,7 +1185,7 @@ body.page-user-reset.not-logged-in {
                     }
 
                     &.active label:before {
-                        background:url("@{images-path}/ym_sprites.png") scroll no-repeat -2px -329px #fff;
+                        background:url("@{images-path}/ym_sprites.png") scroll no-repeat -4px -334px #fff;
                     }
 
                     &.form-disabled {
@@ -1337,7 +1338,22 @@ body.page-user-reset.not-logged-in {
             }
         }
 
-        // - what-do-you-want-them-to-do
+        // - This is translation
+        .webform-component.webform-component-select.webform-component--other-data--parent-campaign-id {
+            &.webform-container-inline {
+                @media all and (min-width:@screen-lg) {
+                    & > label {
+                        display:inline-block;
+                        width:36px;
+
+                        & + select {
+                            display:inline-block;
+                            width: ~'calc(100% - 54px)';
+                        }
+                    }
+                }
+            }
+        }
 
         // - Language
         .webform-component.language {
@@ -1384,7 +1400,7 @@ body.page-user-reset.not-logged-in {
                     &:before {
                         content: '';
                         position: absolute;
-                        top:0;
+                        top:-3px;
                         left: -54px;
                         bottom:0;
                         width:50px;
@@ -1395,7 +1411,7 @@ body.page-user-reset.not-logged-in {
                     .radio {
                         display: table-cell;
                         float:none;
-                        padding: 10px 0;
+                        padding: 7px 0;
 
                         font-size: @font-size-small;
 
@@ -1422,7 +1438,7 @@ body.page-user-reset.not-logged-in {
                     content: '';
                     position: absolute;
                     left: 0;
-                    bottom: -42px;
+                    bottom: -41px;
                     width: 50px;
                     height: 42px;
                     display: block;
