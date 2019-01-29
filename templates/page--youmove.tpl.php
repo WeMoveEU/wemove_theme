@@ -6,7 +6,7 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header pull-left">
       <a class="navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('You home page'); ?>">
-          <img src="<?php print $youmove_url;?>/images/wemove/logo.png">
+          <img src="<?php print $youmove_url;?>/images/wemove/youmove-logo.png">
       </a>
     </div>
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
@@ -73,7 +73,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-3" id="logo">
-          <img src="<?php print $youmove_url;?>/images/wemove/logo.png" style="width: 190px">
+          <img src="<?php print $youmove_url;?>/images/wemove/youmove-logo.png" style="width: 190px">
       </div>
       <div class="col-sm-9" id="footer-description">
           <p id="disclaimer"><?php print t('Petitions on you.wemove.eu are started and run by members of the public. WeMove.EU hosts these petitions and they are in line with our values but they are not necessarily endorsed by WeMove.EU.'); ?></p>
