@@ -1040,18 +1040,19 @@ body.page-user-reset.not-logged-in {
 
             & > .webform-component,
             & > .webform-component-fieldset,
-            #edit-submitted-add-an-image-ajax-wrapper {
+            #edit-submitted-add-an-image-ajax-wrapper,
+            & > .text-format-wrapper {
                 .make-sm-column(6);
-                clear:both;
+                clear: left;
             }
 
             & > .webform-component-markup[class*="-note "] {
-                clear:both;
+                
                 @media all and (min-width:@screen-sm) {
-                    clear:none;
-                    position: absolute !important;
-                    left:53%;
+                    float: right;
+                    clear: none;
                     width:44%;
+                    position: relative;
 
                     transition: all 0.5s ease;
                 }
@@ -1059,8 +1060,7 @@ body.page-user-reset.not-logged-in {
 
             &  fieldset > .panel-body > .webform-component-markup[class*="-note "] {
                 @media all and (min-width:@screen-sm) {
-                    position: absolute !important;
-                    left:106.5%;
+                    // left:106.5%;
                     width:88.5%;
 
                     transition: all 0.5s ease;
@@ -1206,7 +1206,6 @@ body.page-user-reset.not-logged-in {
         & > div  fieldset > .panel-body > .webform-component-markup[class*="-note "] {
             padding: floor(@grid-gutter-width / 2) floor(@grid-gutter-width / 2) floor(@grid-gutter-width / 3);
             margin:0 floor(@grid-gutter-width / 2) floor(@grid-gutter-width / 2);
-            position: static;
             border:3px solid #ccc;
             background-color: #ffe48a;
 
@@ -1216,7 +1215,8 @@ body.page-user-reset.not-logged-in {
             font-size:@font-size-small-2;
 
             @media all and (min-width:@screen-sm) {
-                opacity:0;
+                // opacity:0;
+                display: none;
                 background-color: transparent;
 
                 &:before,
@@ -1241,7 +1241,8 @@ body.page-user-reset.not-logged-in {
                 }
 
                 &.tooltip-active {
-                    opacity:1;
+                    // opacity:1;
+                    display: block;
                 }
             }
         }

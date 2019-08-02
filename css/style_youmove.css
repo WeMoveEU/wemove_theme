@@ -7400,12 +7400,14 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
 .node-type-webform.you-campaign .webform-client-form > div > .webform-component-fieldset,
 .page-node-submission.you-campaign .webform-client-form > div > .webform-component-fieldset,
 .node-type-webform.you-campaign .webform-client-form > div #edit-submitted-add-an-image-ajax-wrapper,
-.page-node-submission.you-campaign .webform-client-form > div #edit-submitted-add-an-image-ajax-wrapper {
+.page-node-submission.you-campaign .webform-client-form > div #edit-submitted-add-an-image-ajax-wrapper,
+.node-type-webform.you-campaign .webform-client-form > div > .text-format-wrapper,
+.page-node-submission.you-campaign .webform-client-form > div > .text-format-wrapper {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  clear: both;
+  clear: left;
 }
 @media (min-width: 768px) {
   .node-type-webform.you-campaign .webform-client-form > div > .webform-component,
@@ -7413,30 +7415,26 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
   .node-type-webform.you-campaign .webform-client-form > div > .webform-component-fieldset,
   .page-node-submission.you-campaign .webform-client-form > div > .webform-component-fieldset,
   .node-type-webform.you-campaign .webform-client-form > div #edit-submitted-add-an-image-ajax-wrapper,
-  .page-node-submission.you-campaign .webform-client-form > div #edit-submitted-add-an-image-ajax-wrapper {
+  .page-node-submission.you-campaign .webform-client-form > div #edit-submitted-add-an-image-ajax-wrapper,
+  .node-type-webform.you-campaign .webform-client-form > div > .text-format-wrapper,
+  .page-node-submission.you-campaign .webform-client-form > div > .text-format-wrapper {
     float: left;
     width: 50%;
   }
 }
-.node-type-webform.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "],
-.page-node-submission.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "] {
-  clear: both;
-}
 @media all and (min-width: 768px) {
   .node-type-webform.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "],
   .page-node-submission.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "] {
+    float: right;
     clear: none;
-    position: absolute !important;
-    left: 53%;
     width: 44%;
+    position: relative;
     transition: all 0.5s ease;
   }
 }
 @media all and (min-width: 768px) {
   .node-type-webform.you-campaign .webform-client-form > div fieldset > .panel-body > .webform-component-markup[class*="-note "],
   .page-node-submission.you-campaign .webform-client-form > div fieldset > .panel-body > .webform-component-markup[class*="-note "] {
-    position: absolute !important;
-    left: 106.5%;
     width: 88.5%;
     transition: all 0.5s ease;
   }
@@ -7660,7 +7658,6 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
 .page-node-submission.you-campaign .webform-client-form > div fieldset > .panel-body > .webform-component-markup[class*="-note "] {
   padding: 15px 15px 10px;
   margin: 0 15px 15px;
-  position: static;
   border: 3px solid #ccc;
   background-color: #ffe48a;
   -webkit-border-radius: 3px;
@@ -7672,7 +7669,7 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
   .page-node-submission.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "],
   .node-type-webform.you-campaign .webform-client-form > div fieldset > .panel-body > .webform-component-markup[class*="-note "],
   .page-node-submission.you-campaign .webform-client-form > div fieldset > .panel-body > .webform-component-markup[class*="-note "] {
-    opacity: 0;
+    display: none;
     background-color: transparent;
   }
   .node-type-webform.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "]:before,
@@ -7708,7 +7705,7 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
   .page-node-submission.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "].tooltip-active,
   .node-type-webform.you-campaign .webform-client-form > div fieldset > .panel-body > .webform-component-markup[class*="-note "].tooltip-active,
   .page-node-submission.you-campaign .webform-client-form > div fieldset > .panel-body > .webform-component-markup[class*="-note "].tooltip-active {
-    opacity: 1;
+    display: block;
   }
 }
 .node-type-webform.you-campaign .webform-client-form > div fieldset > .panel-body > .webform-component-markup[class*="-note "],

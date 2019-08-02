@@ -9,7 +9,7 @@ function wmeu_preprocess_html(&$vars) {
       drupal_add_css(path_to_theme() . '/css/style_youmove.css');
 
       drupal_add_js(array('youmove' => array('campaign_page_class' => 'you-campaign')), 'setting');
-      drupal_add_js(drupal_get_path('theme', 'wmeu') . '/js/youmove.js');
+      drupal_add_js(drupal_get_path('theme', 'wmeu') . '/js/youmove.js', array('scope' => 'footer', 'weight' => 999));
 
       if(_is_youmove_campaign_page()) {
           $vars['classes_array'][] = 'you-campaign';

@@ -27,21 +27,24 @@
   Drupal.behaviors.youmove_formTooltip = {
     attach: function(context) {
         var tooltipSelector = '.webform-component-markup[class*="-note"]',
-               tooltipActiveClass = 'tooltip-active';
+            tooltipActiveClass = 'tooltip-active';
         $(tooltipSelector).eq(0).addClass(tooltipActiveClass);
+        
+        // For webform-component
         $('.webform-component', '.' + Drupal.settings.youmove.campaign_page_class + ' form.webform-client-form').each(function(){
-            var offsetTop = $(this).position().top;
-            $(this).next(tooltipSelector).css('top',offsetTop);
-
             $(this).find('textarea,input[type="text"],input[type="email"],input[type="checkbox"],input[type="radio"]').focus(function(){
                 $(tooltipSelector).removeClass(tooltipActiveClass);
-                $(this).closest('.webform-component').next(tooltipSelector).addClass(tooltipActiveClass);
+                $(this).closest('.webform-component, .text-format-wrapper').next(tooltipSelector).addClass(tooltipActiveClass);
             }).focusout(function(){});
         });
+        // For HTML text area control
+        $('.text-format-wrapper .cke_focus', '.' + Drupal.settings.youmove.campaign_page_class + ' form.webform-client-form').each(function(){
+           $(tooltipSelector).removeClass(tooltipActiveClass);
+           $(this).closest('.text-format-wrapper').next(tooltipSelector).addClass(tooltipActiveClass);
+        });
     }
-}
-
-
+  } 
+  
   Drupal.behaviors.youmove_floatingBlock = {
     attach: function(context) {
             var floatingBlock = $("#block-views-your-campaigns-block-wrapper");
