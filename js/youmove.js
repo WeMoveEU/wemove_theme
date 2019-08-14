@@ -30,18 +30,21 @@
             tooltipActiveClass = 'tooltip-active';
         $(tooltipSelector).eq(0).addClass(tooltipActiveClass);
         
-        // For webform-component
-        $('.webform-component', '.' + Drupal.settings.youmove.campaign_page_class + ' form.webform-client-form').each(function(){
-            $(this).find('textarea,input[type="text"],input[type="email"],input[type="checkbox"],input[type="radio"]').focus(function(){
-                $(tooltipSelector).removeClass(tooltipActiveClass);
-                $(this).closest('.webform-component, .text-format-wrapper').next(tooltipSelector).addClass(tooltipActiveClass);
-            }).focusout(function(){});
-        });
         // For HTML text area control
-        $('.text-format-wrapper .cke_focus', '.' + Drupal.settings.youmove.campaign_page_class + ' form.webform-client-form').each(function(){
-           $(tooltipSelector).removeClass(tooltipActiveClass);
-           $(this).closest('.text-format-wrapper').next(tooltipSelector).addClass(tooltipActiveClass);
+        $( '.' + Drupal.settings.youmove.campaign_page_class + ' form.webform-client-form').click(function(e) {
+            var webformItem = $(e.target).closest('.text-format-wrapper, .webform-component.form-item');
+            
+            $(tooltipSelector).removeClass(tooltipActiveClass);
+            webformItem.next(tooltipSelector).addClass(tooltipActiveClass);
+
+            // If item in fieldset add additional margin
+            if($(e.target).closest('fieldset').length) {
+                var margin = webformItem.height();
+                webformItem.next(tooltipSelector).css('margin-top',(-1)*margin);
+            }
         });
+        
+        
     }
   } 
   

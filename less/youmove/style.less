@@ -1046,6 +1046,8 @@ body.page-user-reset.not-logged-in {
                 clear: left;
             }
 
+		
+
             & > .webform-component-markup[class*="-note "] {
                 
                 @media all and (min-width:@screen-sm) {
@@ -1060,8 +1062,9 @@ body.page-user-reset.not-logged-in {
 
             &  fieldset > .panel-body > .webform-component-markup[class*="-note "] {
                 @media all and (min-width:@screen-sm) {
-                    // left:106.5%;
+                    margin-left: 100%;
                     width:88.5%;
+	            position: absolute;		
 
                     transition: all 0.5s ease;
                 }
@@ -1205,7 +1208,6 @@ body.page-user-reset.not-logged-in {
         & > div > .webform-component-markup[class*="-note "],
         & > div  fieldset > .panel-body > .webform-component-markup[class*="-note "] {
             padding: floor(@grid-gutter-width / 2) floor(@grid-gutter-width / 2) floor(@grid-gutter-width / 3);
-            margin:0 floor(@grid-gutter-width / 2) floor(@grid-gutter-width / 2);
             border:3px solid #ccc;
             background-color: #ffe48a;
 
@@ -1247,10 +1249,14 @@ body.page-user-reset.not-logged-in {
             }
         }
 
-        & > div  fieldset > .panel-body > .webform-component-markup[class*="-note "] {
-            margin-left:0;
-            margin-right:0;
-        }
+        //& > div  fieldset > .panel-body > .webform-component-markup[class*="-note "] {
+        //    margin-left:0;
+        //    margin-right:0;
+        //}
+
+	& > div > .webform-component-markup[class*="-note "] {
+		 margin:0 floor(@grid-gutter-width / 2) floor(@grid-gutter-width / 2);
+	}
 
 
         // - Progress bar
@@ -1763,6 +1769,15 @@ body.page-user-reset.not-logged-in {
             display:none;
         }
     }
+ 
+    // - Petition run by
+    & > .run-by {
+        label,
+        .field-prefix {
+            display: inline;
+            margin-right: 0;
+        }
+    }	
 
     // - what-do-you-want-them-to-do
     // - add-image

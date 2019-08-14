@@ -7435,7 +7435,9 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
 @media all and (min-width: 768px) {
   .node-type-webform.you-campaign .webform-client-form > div fieldset > .panel-body > .webform-component-markup[class*="-note "],
   .page-node-submission.you-campaign .webform-client-form > div fieldset > .panel-body > .webform-component-markup[class*="-note "] {
+    margin-left: 100%;
     width: 88.5%;
+    position: absolute;
     transition: all 0.5s ease;
   }
 }
@@ -7609,6 +7611,10 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
 .page-node-submission.you-campaign .webform-client-form .webform-component.webform-component-textarea textarea {
   resize: vertical !important;
 }
+.node-type-webform.you-campaign .webform-client-form .cke_editable,
+.page-node-submission.you-campaign .webform-client-form .cke_editable {
+  font-family: Arial;
+}
 .node-type-webform.you-campaign .webform-client-form .webform-component.form-type-checkboxes .form-checkboxes .checkbox label,
 .page-node-submission.you-campaign .webform-client-form .webform-component.form-type-checkboxes .form-checkboxes .checkbox label {
   position: relative;
@@ -7657,7 +7663,6 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
 .node-type-webform.you-campaign .webform-client-form > div fieldset > .panel-body > .webform-component-markup[class*="-note "],
 .page-node-submission.you-campaign .webform-client-form > div fieldset > .panel-body > .webform-component-markup[class*="-note "] {
   padding: 15px 15px 10px;
-  margin: 0 15px 15px;
   border: 3px solid #ccc;
   background-color: #ffe48a;
   -webkit-border-radius: 3px;
@@ -7708,10 +7713,9 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
     display: block;
   }
 }
-.node-type-webform.you-campaign .webform-client-form > div fieldset > .panel-body > .webform-component-markup[class*="-note "],
-.page-node-submission.you-campaign .webform-client-form > div fieldset > .panel-body > .webform-component-markup[class*="-note "] {
-  margin-left: 0;
-  margin-right: 0;
+.node-type-webform.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "],
+.page-node-submission.you-campaign .webform-client-form > div > .webform-component-markup[class*="-note "] {
+  margin: 0 15px 15px;
 }
 .node-type-webform.you-campaign .webform-client-form .webform-progressbar,
 .page-node-submission.you-campaign .webform-client-form .webform-progressbar {
@@ -8256,6 +8260,11 @@ body.page-user-reset.not-logged-in form#user-pass-reset > div > p + p {
 }
 .page-node-submission:not(.page-node-submission-edit) .webform-submission > .campaign-title label {
   display: none;
+}
+.page-node-submission:not(.page-node-submission-edit) .webform-submission > .run-by label,
+.page-node-submission:not(.page-node-submission-edit) .webform-submission > .run-by .field-prefix {
+  display: inline;
+  margin-right: 0;
 }
 .page-node-submission:not(.page-node-submission-edit) .webform-submission > .add-image label {
   display: none;
