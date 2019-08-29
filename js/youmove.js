@@ -109,6 +109,7 @@
     attach: function(context) {
       $('[href*="/filter/tips/youmove"]').parent().parent().remove();
       $('.back-to').remove();
+      $('.ckeditor_links').hide();
     }
   };
 
