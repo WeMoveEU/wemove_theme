@@ -105,6 +105,12 @@
     }
   };
 
+  Drupal.behaviors.youmove_hide_more_information = {
+    attach: function(context) {
+      $('[href="/filter/tips/youmove"]').parent().parent().remove();
+    }
+  };
+
  function toggleClassForParent(el) {
     var parent = el.closest('.form-item');
     if (el.is(':checked') ) {
