@@ -108,6 +108,7 @@
   Drupal.behaviors.youmove_hide_more_information = {
     attach: function(context) {
       $('[href*="/filter/tips/youmove"]').parent().parent().remove();
+      $('.back-to').remove();
     }
   };
 
