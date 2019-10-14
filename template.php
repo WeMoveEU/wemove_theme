@@ -154,6 +154,14 @@ function wmeu_webform_element($variables) {
   return $output;
 }
 
+function wmeu_preprocess_webform_element(&$variables) {
+  $element = $variables['element'];
+  
+  if($element['#id'] === 'edit-submitted-add-an-image-upload') {
+     $variables['element']['#description'] = theme('file_upload_help', array('description' => $element['#description'], 'upload_validators' => $element['#upload_validators']));
+  } 
+}
+
 function wmeu_file_upload_help(array $variables) {
     // If popover's are disabled, just theme this normally.
   if (!bootstrap_setting('popover_enabled')) {
