@@ -78,7 +78,7 @@
     <?php if (!empty($page['navigation'])): ?>
       <?php print render($page['navigation']); ?>
     <?php endif; ?>
-		  
+
     <div class="navbar-header">
 		<div class="navbar-header-inner">
 		  <?php if (!empty($site_slogan) || !empty($page['below_slogan']) ): ?>
@@ -89,13 +89,13 @@
                              <?php print render($page['below_slogan']); ?>
                         </div>
 		  <?php endif; ?>
-		  
+
 		  <?php if ($logo): ?>
 		  <a class="logo navbar-btn col-xs-4" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
 			<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
 		  </a>
 		  <?php endif; ?>
-		</div>  
+		</div>
 </header>
 </div>
 
@@ -117,7 +117,6 @@
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
-      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
 
          <?php print render($title_prefix); ?>
@@ -125,7 +124,7 @@
           <h1 class="page-header"><?php print $title; ?></h1>
          <?php endif; ?>
          <?php print render($title_suffix); ?>
- 
+
       <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>
@@ -151,6 +150,6 @@
    <footer class="footer">
       <div class="container">
           <?php print render($page['footer']); ?>
-      </div>  
+      </div>
    </footer>
 <?php endif; ?>
