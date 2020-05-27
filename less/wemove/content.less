@@ -228,11 +228,22 @@
 	@media (min-width: @screen-sm) {
 		.region-highlighted {
 			#block-block-1 {
-				background:url("@{images-path}/we-move-europe.svg") no-repeat 13px 50% transparent;
-				background-size: auto 210px;
 				margin-top: -7px;
 				padding-left: 352px;
 				padding-top: 7px;
+				position: relative;	
+
+                                & > p:first-child:before {
+					content: '';
+					display: block;
+					position: absolute;
+					top:0;
+					bottom: 0;
+					left: 0;
+					width: 332px;
+					background:url("@{images-path}/we-move-europe.svg") no-repeat 100% 50% transparent;
+					background-size: contain;
+                                }
 			}
 
 		}
