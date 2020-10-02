@@ -148,6 +148,19 @@
       });
    }
  };
+ 
+ Drupal.behaviors.youmove_campaign_form_partners_logos = {
+   attach: function(context) {
+       $('.multi-logos input[type="radio"]').on('change', function() {
+            $(this).parents('.webform-component-radios').addClass('radio-checked');
+       });
 
+       $('.page-node-submission:not(.page-node-submission-edit) .webform-submission .webform-component--partners .panel-body div[class*="--partner"] a').each(function() {
+             var src = $(this).attr('href');
+             $('<img src="'+src+'" />').insertBefore($(this));
+             $(this).addClass('sr-only'); 
+       });
+   }
+ };
 
 })(jQuery, Drupal);

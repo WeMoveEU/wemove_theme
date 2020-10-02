@@ -154,6 +154,10 @@ a.btn:hover,
 }
 .btn.btn-primary {
     .btn-primary;
+
+    .glyphicon {
+       top: -2px;
+    }
 }
 
 
@@ -1578,6 +1582,66 @@ body.page-user-reset.not-logged-in {
             }
         }
 
+	// Partners - Logos
+        .webform-component--partners.form-wrapper {
+            .panel-heading {
+                background-color: transparent;
+                padding: 0;
+
+                .panel-title {
+                     font-size: @font-size-base;
+                     color: @text-color;
+                     font-weight: bold;                      
+                }
+            }
+
+            .panel-body {
+                 padding: 0;
+
+                 .webform-component-file {
+                      .form-managed-file {
+                          overflow: hidden;
+
+                          input[type="file"] {
+                               float: left;
+                               width: ~"calc(100% - 150px)"; 
+                          }
+                          .file {
+                               float: left;
+                               width: ~"calc(100% - 150px)";
+                               background-color:@gray-lighter;
+                               padding: 7px 12px;                                
+                          }
+                          button {
+                              float: right;
+                          }
+                      }
+
+                      .description {
+                          margin-top: 0;
+                      }
+                 }
+
+                 .webform-component-radios {
+                   &.radio-checked {
+                      &:extend(.sr-only);
+                   } 
+ 
+                   .form-type-radio {
+                      & > label {
+                            &:extend(.btn all);
+                            &:extend(.btn-primary all);
+                            overflow: hidden;
+
+                            input[type="radio"] {
+                                 &:extend(.sr-only);
+                            }
+                      }
+                    }
+                 }
+            } 
+        } 
+
         // User form - wrapper
         .webform-component--user-form.form-wrapper {
             margin-bottom: 0;
@@ -1790,6 +1854,38 @@ body.page-user-reset.not-logged-in {
     // - contact fieldset
     & > .webform-component-fieldset.contact {
         display:none;
+    }
+
+    // - partners logos
+    & > .webform-component-fieldset.webform-component--partners {
+       .panel-heading {
+                background-color: transparent;
+                padding: 0;
+
+                .panel-title {
+                     font-size: @font-size-base;
+                     color: @text-color;
+                     font-weight: bold;
+                }
+       }
+
+       .panel-body {
+               padding: 0;
+
+               div[class*="--is-partner"] {
+                    display: none;
+               }  
+               div[class*="--partner"] {
+                    img {
+                        float: left;
+                        margin-right:@grid-gutter-width;
+                        margin-bottom:@grid-gutter-width;
+                        height: 120px;
+                        width: auto;
+                    }
+               }
+
+       }
     }
 }
 
