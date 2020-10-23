@@ -154,6 +154,11 @@
        $('.multi-logos input[type="radio"]').on('change', function() {
             $(this).parents('.webform-component-radios').addClass('radio-checked');
        });
+       
+       $('.multi-logos input[type="radio"]:checked').each( function() {
+            $(this).parents('.webform-component-radios').addClass('radio-checked');
+       });
+
 
        $('.page-node-submission:not(.page-node-submission-edit) .webform-submission .webform-component--partners .panel-body div[class*="--partner"] a').each(function() {
              var src = $(this).attr('href');
