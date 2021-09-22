@@ -76,7 +76,7 @@
           <img src="<?php print $youmove_url;?>/images/wemove/youmove-logo.png" style="width: 190px">
       </div>
       <div class="col-sm-9" id="footer-description">
-          <p id="disclaimer"><?php print t('Petitions on you.wemove.eu are started and run by members of the public. WeMove.EU hosts these petitions and they are in line with our values but they are not necessarily endorsed by WeMove.EU.'); ?></p>
+          <p id="disclaimer"><?php print t('Petitions on you.wemove.eu are started and run by members of the public. WeMove Europe gGmbH hosts these petitions and they are in line with our values but they are not necessarily endorsed by WeMove Europe gGmbH.'); ?></p>
       </div>
     </div>
   </div>
